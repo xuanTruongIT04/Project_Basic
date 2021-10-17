@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- File css -->
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./main.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font google -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <!--Counterup number-Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+    <title>Covidy</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="container jc-between">
+                <div id="header-logo">
+                    <a href="./index.html">
+                        <img src="https://demo.glowlogix.com.pk/templates/covidy/images/logo.png" alt="Logo"
+                            title="Logo Covidy">
+                    </a>
+                </div>
+                <div id="nav">
+                    <nav>
+                        <ul id="main-menu">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#symptoms">Symptoms</a></li>
+                            <li><a href="#covid-spread">Covid spread</a></li>
+                            <li><a href="#covid-prevention">Do, dont's</a></li>
+                            <li class="open-threesome">
+                                <a href="">News
+                                    <i class="fas fa-caret-down"></i>
+                                </a>
+                                <ul id="sub-menu">
+                                    <li><a href="./blog-grid.html">Blog Grid</a></li>
+                                    <li><a href="./blog-sidebar.html">Blog Sidebar</a></li>
+                                    <li><a href="./blog-detail.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <button class="btn">
+                    <i class="call-me-baby fas fa-phone-alt"></i>
+                    111-333-555-77
+                </button>
+            </div>
+        </div>
+        <!-- END: HEADER -->
+
+        <div id="wp-content">
+
+            <div id="home">
+                <div class="container">
+                    <div class="post">
+                        <div class="post-title">
+                            <h1>Stay Home Stay Safe</h1>
+
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt.</p>
+                            <a href="#about" class="text-upper btn">about corona</a>
+                        </div>
+
+                        <div class="post-thumb">
+                            <img src="https://boring-galileo-5a5238.netlify.app/Covidy_files/hero.png" alt="Hero images"
+                                title="Hero" class="up-down-pic">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end: home -->
+
+            <div id="count-down">
+                <div class="container">
+                    <div id="list-box-countdown">
+                        <!-- 1 -->
+                        <div class="contain-x">
+                            <div class="box-countdown-item">
+                                <h6 class="number">186</h6>
+                                <p>Affected Country</p>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="contain-x">
+                            <div class="box-countdown-item">
+                                <h6 class="number">2411875</h6>
+                                <p>Confirmed Cases</p>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="contain-x">
+                            <div class="box-countdown-item">
+                                <h6 class="number">155897</h6>
+                                <p>Recovered Cases</p>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="contain-x">
+                            <div class="box-countdown-item">
+                                <h6 class="number">10564</h6>
+                                <p>Worldwide Deaths</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                $('.number').counterUp({
+                    delay: 10,
+                    time: 3000
+                });
+
+                document.addEventListener('scroll', () => {
+                    if(window.scrollY >= 40) {
+                        document.querySelector("#header").classList.add("header-fix");
+                    }
+                    else {
+                        document.querySelector("#header").classList.remove("header-fix");
+                    }
+                });
+            </script>
+            <!-- end: count-down -->
+
+            <div id="about" class="pt-170">
+                <div class="container">
+                    <div class="post d-flex">
+                        <div class="post-thumb">
+                            <img src="https://boring-galileo-5a5238.netlify.app/Covidy_files/about.png" alt="About"
+                                title="About" class="up-down-pic">
+                        </div>
+
+                        <div class="post-title">
+                            <span class="spanz">About Covid</span>
+                            <h2>What is Coronavirus?</h2>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.</p>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.</p>
+                            <a href="#symptoms" class="text-upper btn">see symptoms</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end: about -->
+
+            <div id="symptoms" class="pt-170">
+                <div class="container">
+                    <div class="post d-flex ">
+                        <div class="post-thumb order-2">
+                            <img src="https://boring-galileo-5a5238.netlify.app/Covidy_files/symptoms.png"
+                                alt="Symptoms" title="Symptoms" class="up-down-pic">
+                        </div>
+
+                        <div class="post-title order-1">
+                            <span class="spanz">Covid Symptoms</span>
+                            <h2>What are symptoms?</h2>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+                            <div class="list-symp-name">
+                                <!-- 1 -->
+                                <div class="symp-name-item">
+                                    <div><i class="tick-xanh fas fa-check"></i>Headache</div>
+                                    <div><i class="tick-xanh fas fa-check"></i>Breath shortness</div>
+                                </div>
+
+                                <!-- 2 -->
+                                <div class="symp-name-item">
+                                    <div><i class="tick-xanh fas fa-check"></i>Fever</div>
+                                    <div><i class="tick-xanh fas fa-check"></i>Kidney Failure</div>
+                                </div>
+
+                                <!-- 3 -->
+                                <div class="symp-name-item">
+                                    <div><i class="tick-xanh fas fa-check"></i>Cough</div>
+                                    <div><i class="tick-xanh fas fa-check"></i>Sneeze</div>
+                                </div>
+
+                            </div>
+                            <a href="#covid-spread" class="text-upper btn">Why Covid Spread</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="world-map" class="pt-170">
+                <div class="container">
+                    <div class="post-s">
+                        <div class="post-x">
+                            <div class="post-upper text-center">
+                                <span class="spanz">Covid Threat</span>
+                                <h2>Maximum amount of people die with Covid-19</h2>
+                                <p class="pepe">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                    accusantium doloremque
+                                    laudantium,
+                                    totam rem aperiam, eaque ipsa quae.</p>
+                            </div>
+                            <div class="post-lower">
+                                <img src="https://boring-galileo-5a5238.netlify.app/Covidy_files/world-map.png"
+                                    alt="WORLD-MAP" title="WORLD-MAP" class="up-down-pic"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end: world-map -->
+
+            <div id="covid-spread" class="pt-160">
+                <div class="container">
+                    <div class="post">
+                        <div class="post-thumb">
+                            <ul class="covid-spread-images">
+                                <!-- 1 -->
+                                <div class="contain">
+                                    <li>
+                                        <div>
+                                            <img src="https://boring-galileo-5a5238.netlify.app/Covidy_files/personal-contact.png"
+                                                alt="CS-images" title="CS-images">
+                                            <p class="atc">Personal Contact</p>
+                                        </div>
+                                    </li>
+                                    <!-- 2 -->
+                                    <li>
+                                        <div>
+                                            <img src="https://boring-galileo-5a5238.netlify.app/Covidy_files/face-touch.png"
+                                                alt="CS-images" title="CS-images">
+                                            <p class="atc">Face Touch</p>
+                                        </div>
+                                    </li>
+                                    <!-- 3 -->
+                                    <li>
+                                        <div>
+                                            <img src="https://boring-galileo-5a5238.netlify.app/Covidy_files/people-crowd.png"
+                                                alt="CS-images" title="CS-images">
+                                            <p class="atc">People Crowd</p>
+                                        </div>
+                                    </li>
+                                    <!-- 4 -->
+                                    <li>
+                                        <div>
+                                            <img src="https://boring-galileo-5a5238.netlify.app/Covidy_files/dry-cough.png"
+                                                alt="CS-images" title="CS-images">
+                                            <p class="atc">Dry Cough</p>
+                                        </div>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="post-title">
+                            <span class="spanz">Covid Spread</span>
+                            <h2>How does coronavirus spread?</h2>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+
+                            <div class="list-covid-spead-name">
+                                <!-- 1 -->
+                                <li>
+                                    <i class="tick-xanh fas fa-check"></i>But I must explain to you how all this
+                                    mistaken
+                                    idea.
+                                </li>
+
+                                <!-- 2 -->
+                                <li>
+                                    <i class="tick-xanh fas fa-check"></i>Zwei flinke Boxer jagen die quirlige Eva und
+                                    ihren.
+                                </li>
+
+                                <!-- 3 -->
+                                <li>
+                                    <i class="tick-xanh fas fa-check"></i>Sed ut perspiciatis unde omnis iste natus
+                                    error
+                                    sit.
+                                </li>
+
+                            </div>
+                            <a href="#covid-prevention" class="text-upper btn">Covid Prevention</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end: covid-spread -->
+
+            <div id="covid-prevention" class="pt-170">
+                <div class="container">
+                    <div class="post-s">
+                        <div class="post-x">
+                            <div class="post-upper text-center">
+                                <span class="spanz">Covid Prevention</span>
+                                <h2>Take steps to protect yourself</h2>
+                                <p class="pepe">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                    accusantium
+                                    doloremque
+                                    laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                            </div>
+                        </div>
+                        <div class="post-x">
+                            <div class="post-lower d-flex">
+                                <div class="post-checklist">
+                                    <div class="post-header">
+                                        <h3>What you <acticle class="do">should do</acticle>
+                                        </h3>
+                                    </div>
+                                    <ul class="should-do">
+                                        <!-- 1 -->
+                                        <li>
+                                            <div class="imagez">
+                                                <img src="https://demo.glowlogix.com.pk/templates/covidy/images/wear-face-mask.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="should-do-define">
+                                                <h4 class="should-do-title">Wear Face Mask</h4>
+                                                <p class="should">Sed ut perspiciatis unde omnis iste natus error sit
+                                                    sed
+                                                    accusantium doloremque.</p>
+                                            </div>
+                                        </li>
+
+                                        <!-- 2 -->
+                                        <li>
+                                            <div class="imagez">
+                                                <img src="https://demo.glowlogix.com.pk/templates/covidy/images/cover-face.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="should-do-define">
+                                                <h4 class="should-do-title">Cover Face When Coughing</h4>
+                                                <p class="should">Sed ut perspiciatis unde omnis iste natus error sit
+                                                    sed
+                                                    accusantium doloremque.</p>
+                                            </div>
+                                        </li>
+
+                                        <!-- 3 -->
+                                        <li>
+                                            <div class="imagez">
+                                                <img src="https://demo.glowlogix.com.pk/templates/covidy/images/wash-hand.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="should-do-define">
+                                                <h4 class="should-do-title">Wash Your Hand</h4>
+                                                <p class="should">Sed ut perspiciatis unde omnis iste natus error sit
+                                                    sed
+                                                    accusantium doloremque.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="post-checklist">
+                                    <div class="post-header">
+                                        <h3>What you <acticle class="dont">shouldn't do</acticle>
+                                        </h3>
+                                    </div>
+                                    <ul class="should-don't">
+                                        <!-- 4 -->
+                                        <li>
+                                            <div class="imagez">
+                                                <img src="https://demo.glowlogix.com.pk/templates/covidy/images/avoid-animal-contact.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="should-do-define">
+                                                <h4 class="should-do-title">Wear Face Mask</h4>
+                                                <p class="should">Sed ut perspiciatis unde omnis iste natus error sit
+                                                    sed
+                                                    accusantium doloremque.</p>
+                                            </div>
+                                        </li>
+
+                                        <!-- 5 -->
+                                        <li>
+                                            <div class="imagez">
+                                                <img src="https://demo.glowlogix.com.pk/templates/covidy/images/avoid-hand-shake.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="should-do-define">
+                                                <h4 class="should-do-title">Cover Face When Coughing</h4>
+                                                <p class="should">Sed ut perspiciatis unde omnis iste natus error sit
+                                                    sed
+                                                    accusantium doloremque.</p>
+                                            </div>
+                                        </li>
+
+                                        <!-- 6 -->
+                                        <li>
+                                            <div class="imagez">
+                                                <img src="https://demo.glowlogix.com.pk/templates/covidy/images/short-distance.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="should-do-define">
+                                                <h4 class="should-do-title">Short Distance</h4>
+                                                <p class="should">Sed ut perspiciatis unde omnis iste natus error sit
+                                                    sed
+                                                    accusantium doloremque.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end: covid prevention -->
+
+            <div id="news-feed" class="pt-170">
+                <div class="container">
+                    <div class="post-s">
+                        <div class="post-x">
+                            <div class="post-upper text-center">
+                                <span class="spanz">News Feed</span>
+                                <h2>Stay updated with our news feed</h2>
+                                <p class="pepe">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                    accusantium
+                                    doloremque
+                                    laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                            </div>
+                            <div class="post-lower">
+                                <ul class="list-post d-flex f-wrap">
+                                    <!-- 1 -->
+                                    <li>
+                                        <div>
+                                            <div class="post-images">
+                                                <img src="https://demo.glowlogix.com.pk/templates/covidy/images/01-news-feed.png"
+                                                    alt="">
+                                                <a class="date">13 March, 20</a>
+                                            </div>
+                                            <span class="spanz">Statistics</span>
+                                            <h3 class="title-nf">Coronavirus, Social and Physical Distancing and Self
+                                                Quarantine</h3>
+                                            <a href="#">
+                                                Read More <i class="fas fa-chevron-right"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <!-- 2 -->
+                                    <li>
+                                        <div class="post-images">
+                                            <img src="https://demo.glowlogix.com.pk/templates/covidy/images/02-news-feed.png"
+                                                alt="">
+                                            <a class="date">17 March, 20</a>
+                                        </div>
+                                        <span class="spanz">vaccine</span>
+                                        <h3 class="title-nf">How coronavirus vaccine will protect people from the covid
+                                            in
+                                            the whole world
+                                        </h3>
+                                        <a href="#">
+                                            Read More <i class="fas fa-chevron-right"></i>
+                                        </a>
+                                    </li>
+
+                                    <!-- 3 -->
+                                    <li>
+                                        <div class="post-images">
+                                            <img src="https://demo.glowlogix.com.pk/templates/covidy/images/03-news-feed.png"
+                                                alt="">
+                                            <a class="date">24 March, 20</a>
+                                        </div>
+                                        <span class="spanz">protection</span>
+                                        <h3 class="title-nf">Protect your family form covid and stay at home and do some
+                                            exercise</h3>
+                                        <a href="#">
+                                            Read More <i class="fas fa-chevron-right"></i>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end: News-feed -->
+
+            <div id="test-covid" class="pt-170">
+                <div class="container">
+                    <div class="post text-center test">
+                        <div class="post-upper">
+                            <h2 class="test-s">Want to test Covid?</h2>
+                            <p class="pepe">Our goal at Our World in Data is to provide testing data over time for many
+                                countries
+                                around the world.</p>
+                        </div>
+                        <div class="post-lower">
+                            <a href="" class="text-upper btn call">
+                                <i class="fas fa-phone-alt"></i>
+                                call for test
+                            </a>
+                            <a href="" class="text-upper btn book">
+                                <i class="fas fa-calendar-alt"></i>
+                                book docter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end: test-covid -->
+
+        </div>
+        <!-- END: WRAPPER-CONTENT -->
+
+        <div id="wp-footer" class="pt-171 pb-145">
+            <div class="container">
+                <div id="wp-footer-info" class="d-flex">
+                    <div class="footer-info">
+                        <img src="https://demo.glowlogix.com.pk/templates/covidy/images/logo.png" alt="Logo-footer"
+                            title="Logo">
+                        <p class="pfc">This website is for health information and advice about coronavirus (COVID-19),
+                            how
+                            to
+                            prevent
+                            and
+                            protect yourself from disease.</p>
+                        <p>Learn about the government response to coronavirus on covid.gov.pk</p>
+                        <div id="footer-socials" class="d-flex">
+                            <div>
+                                <a href="">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <ul class="list-link">
+                            <h6>
+                                <i class="fas fa-plus"></i>
+                                Quick Links
+                            </h6>
+                            <li><a href="">Symptoms</a></li>
+                            <li><a href="">Prevention</a></li>
+                            <li><a href="">Protect Yourself</a></li>
+                            <li><a href="">About Corona</a></li>
+                            <li><a href="">FAQs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <ul class="list-link">
+                            <h6>
+                                <i class="fas fa-plus"></i>
+                                Helpful Links
+                            </h6>
+                            <li><a href="">WHO</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Worldwide Info</a></li>
+                            <li><a href="">About Corona</a></li>
+                            <li><a href="">FAQs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <ul class="list-link">
+                            <h6>
+                                <i class="fas fa-plus"></i>
+                                Important Links
+                            </h6>
+                            <li><a href="">Symptoms</a></li>
+                            <li><a href="">Prevention</a></li>
+                            <li><a href="">Protect Yourself</a></li>
+                            <li><a href="">About Corona</a></li>
+                            <li><a href="">FAQs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <ul class="list-link">
+                            <h6>
+                                <i class="fas fa-plus"></i>
+                                Extended Links
+                            </h6>
+                            <li><a href="">WHO</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Worldwide Info</a></li>
+                            <li><a href="">About Corona</a></li>
+                            <li><a href="">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: WRAPPER FOOTER -->
+
+        <div id="wp-coppy-right">
+            <div class="container">
+                <div class="contain-s">
+                    <div id="copy-right">
+                        <p>© 2020 by Glowlogix</p>
+                    </div>
+                    <div id="privacy">
+                        <a href="">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: COPPY RIGHT -->
+    </div>
+</body>
+
+</html>
+        

@@ -1,0 +1,385 @@
+/* 
+    1. Từ tổng quan đến chi tiết
+    2. Từ ngoài vào trong 
+    3. Từ sau ra trước 
+    4. Từ trên xuống dưới
+    5. Từ trái qua phải 
+*/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px; 
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+/*============ HEADER ============*/
+#header{
+    background-color: #23282d;
+    padding-top: 28px;
+    padding-bottom: 9px;
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+#header .logo-header img{
+    width: 180px;
+}
+
+form#search input{
+    width: 248px;
+    background-color: #131619;
+    border: none;
+    outline: none;
+    padding: 11px 42px 11px 20px;
+    font-size: 14px;
+    color: #909090;
+}
+
+form#search {
+    position: relative;
+}
+
+form#search button{
+    background: none;
+    border: none;
+    color: #909090;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 9px 13px;
+}
+
+nav{
+    margin-top: 7px;
+    padding: 6px 0;
+    flex: 100%;
+    border-right: 10px solid #ff2d2d;
+}
+
+nav ul#main-menu li a{
+    color: #eeeeee;
+    font-size: 16px;
+    padding: 7px 20px;
+}
+
+nav ul#main-menu li:first-child a{
+    padding: 0;
+}
+
+nav ul#main-menu li:hover a{
+    color: #4db2ec;
+    text-decoration: none;
+}
+
+/*============ FEATURED ============*/
+.box .box-header{
+    margin-bottom: 30px;
+}
+
+.box .box-header h3{
+    text-decoration: none;
+    background-color: #23282d;
+    padding: 2px 13px;
+    color: #eeeeee;
+    display: inline-block;
+    margin: -1px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.box.featured .box-body{
+    padding-bottom: 30px; 
+    border-bottom: 1px solid #dadada;
+    margin-bottom: 20px;
+}
+
+.box.featured .post-list li{
+    flex: 0 1 360px;
+    padding: 0 15px;
+}
+
+.box.featured .post-list li:first-child{
+    padding-left: 0;
+}
+
+.box.featured .post-list li:last-child{
+    padding-right: 0;      
+}
+
+.box.featured .post-list .post-thumb{
+    overflow: hidden;
+}
+
+.box .post-thumb a{
+    display: block;
+}
+
+.box.featured .post-list .post-thumb img{
+    width: 360px;
+    height: 240px;
+}
+
+.box.featured .post-list li img,
+.box.featured .post-list li .post-title a{
+    transition: all 0.25s;
+}
+
+.box.featured .post-list li:hover img,
+.box.featured .post-list li:hover .post-title a{
+    transform: scale(1.05);
+    color: #3c3c3c;
+    text-decoration: none;
+}
+
+.box.featured .post-list .post-title{
+    padding-top: 20px;
+}
+
+.box.featured .post-list .post-title a{
+    text-transform: uppercase;
+    color: #5f5f5f;
+    font-weight: 600;
+}
+
+/*=================== CONTENT ===================*/
+
+#content{
+    padding-right: 15px;
+}
+
+.box.post-new .box-header h3{
+    background-color: #4db2ec;
+    color: #fcfcfc;
+}
+
+.box.post-new .box-header{
+    border-bottom: 1px solid #4db2ec;
+}
+
+
+#content .list-post li{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#content .list-post .post-thumb{
+    padding-right: 15px;
+    overflow: hidden;
+}   
+
+#content  .post-thumb img{
+    width: 263px;
+    height: 173px;
+    transition: all 0.15s;
+}
+
+#content .post-thumb:hover img{
+    transform: scale(1.05);
+}
+
+#content .list-post .more-info{
+    padding-left: 15px;
+    width: 488px;
+}
+
+#content .more-info .post-title{
+    font-weight: 600;
+}
+
+#content .more-info .post-title a{
+    color: #111111; 
+    font-size: 21px;
+
+}
+
+#content .more-info .post-title:hover a{
+    color: #4db2ec;
+    text-decoration: none;
+}
+
+#content .more-info .post-published{
+    font-size: 11px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+#content .post-published .post-author{
+    color: #111111;
+}
+
+#content .post-published .post-date{
+    color: #aaaaaa;
+}
+
+#content .post-published .post-excerpts{
+    margin-bottom: 0;
+}
+
+#content .post-excerpts p{
+    color: #777777;
+    font-size: 13px; 
+}
+
+/*=================== SIDEBAR ===================*/
+#sidebar{
+    padding-left: 15px;
+}
+#sidebar .ads{
+    overflow: hidden;
+}
+
+#sidebar a{
+    display: block;
+}
+
+#sidebar .ads img{
+    margin-bottom: 40px;
+    transition: all 0.15s;
+}
+
+#sidebar .ads:hover img{
+    transform: scale(1.05);
+}
+
+.box.top-topic .box-header{
+    border-bottom: 1px solid #ff2d2d;
+}
+
+.box.top-topic .box-header h3{
+    background-color: #ff2d2d;
+}
+
+.box.top-topic .topic-list li a{
+    position: relative;
+    padding: 6px 0;
+    display: block;
+    color: #212121;
+}
+
+.box.top-topic .topic-list li a:hover{
+    text-decoration: none;
+    color: #ff2d2d;
+    text-transform: uppercase;
+}
+
+.box.top-topic .topic-list li span{
+    position: absolute;
+    right: 0;
+}
+
+/*===================== FOOTER =====================*/
+
+#footer{
+    background-color: #2e2f30;
+    padding-top: 54px;
+    padding-bottom: 76px;
+}
+
+#footer .box-header h3{
+    background: none;
+    font-size: 18px;
+    color: #f6f6f6;
+    margin: 10px 0;
+    padding-left: 0;
+}
+
+#footer .logo-header {
+    flex: 278px;
+    padding-right: 98px;
+}
+
+#footer .logo-header h3{
+    visibility: hidden;
+}
+
+#footer .about-us {
+    flex-basis: 682px;
+    padding-left: 15px;
+    padding-right: 195px;
+}
+
+#footer .about-us p{
+    font-size: 14px;
+    color: #f6f6f6;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#footer .about-us a{
+    color: #4db2ec;
+    text-decoration: none;
+}
+
+#footer .box.follow-us {
+    flex: 180px;
+    padding-left: 15px;
+}
+
+#footer .follow-us .menu-social li a{
+    padding: 5px 12px;
+    margin-left: 9px;
+    background-color: #434648;
+    color: #eeeeee;
+    display: block;
+}
+
+#footer .follow-us .menu-social li a i{
+    width: 10px;
+    height: 14px;
+}
+
+#footer .follow-us .menu-social li:first-child a{
+    margin-left: 0;
+}
+
+#footer .follow-us .menu-social li:hover a{
+    color: #4db2ec;
+}
+
+/*========== COPYRIGHT ==========*/
+#wp-copyright{
+    background-color: #222527;  
+    font-size: 14px;
+    padding: 12px 0;
+}
+
+#wp-copyright .copyright span{
+    color: #f3f3f3;
+}
+
+#menu-footer li{
+    padding-left: 30px;
+}
+
+#menu-footer li a{
+    color: #f3f3f3;
+}
+
+#menu-footer li:hover a{
+    text-decoration: none;
+    color: #4db2ec;
+}
+
+#menu-footer li:first-child{
+    padding-left: 0;
+}
+
+
+
+
