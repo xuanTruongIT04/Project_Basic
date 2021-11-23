@@ -1,0 +1,44 @@
+$(document).ready(function () {
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+
+            500: {
+                items: 2
+            },
+            700: {
+                items: 3
+            },
+            1000: {
+                items: 4
+            }
+        }
+    });
+
+    $(".navbar-responsive").click(function(){
+        $("#responsive-menu").slideToggle();
+    });
+
+    $(".arrow-down").click(function(){
+        $(".sub-responsive-menu").slideToggle();
+        $(this).toggleClass("fas fa-chevron-down fas fa-chevron-up");
+    });
+
+    var upSlide = function(){
+        $("#responsive-menu").slideUp();
+        $(".sub-responsive-menu").slideUp();
+    }
+
+    $(window).resize(function(){
+        upSlide();
+    });
+
+    $(window).scroll(function(){
+        upSlide();
+    });
+}); 
