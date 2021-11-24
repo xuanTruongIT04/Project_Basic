@@ -1,8 +1,23 @@
 $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip({
+        placement: "top",
+        tripger: 'hover'
+    });
+
+    $("#home-slide").carousel({
+        interval: 3000, 
+        ride: "carousel",
+    });
+
+
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
         nav: true,
+        autoplay: true,
+        autoplayTimeout: 2500,
+        nav: true,
+        dots: false,
         responsive: {
             0: {
                 items: 1
@@ -41,4 +56,6 @@ $(document).ready(function () {
     $(window).scroll(function(){
         upSlide();
     });
+
+
 }); 
