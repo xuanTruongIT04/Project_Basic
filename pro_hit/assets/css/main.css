@@ -1,0 +1,1079 @@
+body {
+    font-family: "DM Sans", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Fredoka One", cursive;
+    color: #023c5a;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: normal;
+}
+
+p {
+    font-family: "DM Sans", sans-serif;
+    color: #023c5a;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+a,
+.button {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a {
+    color: #635c5c;
+}
+
+a:hover {
+    color: #fff;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+a,
+button {
+    color: #fff;
+    outline: medium none;
+}
+
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+    outline: 0;
+}
+
+input:focus::-moz-placeholder {
+    opacity: 0;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+#header {
+    width: 100%;
+    height: 40px;
+    background-color: #0094df;
+}
+
+#header .first {
+    width: 85%;
+    height: 40px;
+    margin: 0 7%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+#header .header-info-left .header-social {
+    display: flex;
+}
+
+#header .header-social li i {
+    transition: all 0.6s ease-in-out;
+}
+
+#header .header-social li i:hover {
+    transform: rotateY(180deg);
+}
+
+#header .header-social li {
+    list-style: none;
+    line-height: 40px;
+    margin-left: 20px;
+    font-size: 17px;
+}
+
+#header .header-info-right ul {
+    display: flex;
+}
+
+#header .header-info-right ul li {
+    list-style: none;
+    color: white;
+    margin-right: 20px;
+    line-height: 40px;
+}
+
+#menu {
+    background-image: url(https://preview.colorlib.com/theme/thepetcare/assets/img/hero/xh1_hero1.png.pagespeed.ic.DxzVz30PxQ.webp);
+    width: 100%;
+    height: 750px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#menu #first {
+    width: 80%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+    margin: 0 10%;
+}
+
+#menu .main-menu #nav {
+    display: flex;
+    position: relative;
+}
+
+#menu .main-menu #nav li {
+    list-style: none;
+    color: white;
+}
+
+#menu .main-menu #nav li a {
+    text-decoration: none;
+    color: #023c5a;
+    margin: 0 20px;
+    font-weight: 500;
+}
+
+#menu .main-menu #nav li:hover>a {
+    color: rgb(255, 62, 126);
+}
+
+#menu #nav .submenu {
+    width: 180px;
+    height: 120px;
+    background-color: white;
+    box-shadow: 0 10px 20px rgb(2 60 90 / 10%);
+    line-height: 40px;
+    padding: 0;
+    display: none;
+}
+
+#menu #nav .submenu a {
+    line-height: 40px;
+    text-align: left;
+}
+
+#menu .main-menu #nav li:hover .submenu {
+    display: block;
+    position: absolute;
+}
+
+#menu #first .main-menu #nav .header-right-btn {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(255, 62, 126);
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 50px;
+}
+
+#menu #first .main-menu #nav .header-right-btn a {
+    color: white;
+    font-family: "Fredoka One", cursive;
+    font-weight: 700;
+}
+
+#menu #about {
+    width: 80%;
+    height: auto;
+    margin: 0 10%;
+}
+
+#menu #about .hero-caption {
+    margin-top: 50px;
+}
+
+#menu #about h1 {
+    font-size: 70px;
+    font-family: "Fredoka One", cursive;
+    font-weight: 900;
+    color: #023c5a;
+}
+
+#menu #about p {
+    font-family: "Fredoka One", cursive;
+    font-size: 25px;
+}
+
+#menu #about .hero-btn {
+    width: 200px;
+    height: 62px;
+    background-color: rgb(255, 62, 126);
+    border-radius: 50px;
+    color: white;
+    font-family: "Fredoka One", cursive;
+    line-height: 44px;
+    font-size: 20px;
+    margin: 20px 0;
+    box-shadow: inset 0 0 0 0 #ad2e59;
+    transition: linear 0.2s;
+    outline: none;
+    z-index: 1;
+    border: 0;
+}
+
+#menu #about .hero-btn:hover {
+    box-shadow: inset 200px 0 0 0 #ad2e59;
+}
+
+#menu #about .pets-bye {
+    width: 550px;
+    height: 145px;
+    background-color: white;
+    display: flex;
+
+    align-items: center;
+    border-radius: 12px;
+}
+
+#menu #about .pets-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu #about .pets-contact h2 {
+    font-size: 20px;
+    font-weight: 900;
+    font-family: "Fredoka One", cursive;
+    margin: 0 10px;
+}
+
+#menu #about .pets-contact img {
+    margin-left: 90px;
+}
+
+#menu #slick-nav {
+    display: none;
+
+}
+
+#menu #slick-nav .slick-nav-main .btn {
+    width: 100px;
+    height: 40px;
+    background-color: #4c4c4c;
+    margin: 20px 0;
+    position: relative;
+
+
+}
+
+#menu #slick-nav .slick-nav-main .btn:hover #nav {
+    display: block;
+}
+
+#menu #slick-nav #nav li {
+    list-style: none;
+}
+
+#menu #slick-nav #nav {
+    position: absolute;
+    right: 50px;
+    width: 300px;
+    height: auto;
+    background-color: #4c4c4c;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-right: -50px;
+    text-align: left;
+    padding: 0;
+    border-radius: 12px;
+    display: none;
+}
+
+#menu #slick-nav #nav .header-right-btn {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(255, 62, 126);
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 50px;
+    margin: 15px 20px;
+}
+
+#menu #slick-nav #nav .header-right-btn a {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+#menu #slick-nav #nav li a {
+    color: white;
+    display: inline-block;
+
+}
+
+#menu #slick-nav #nav li:hover {
+    background-color: whitesmoke;
+}
+
+#menu #slick-nav #nav li:hover a {
+    color: #023c5a;
+}
+
+#menu #slick-nav li>a {
+    text-decoration: none;
+    color: #023c5a;
+    margin: 0 20px;
+    line-height: 40px;
+    font-weight: 500;
+    padding: 0 20px;
+}
+
+#menu #slick-nav .slick-nav-main .btn>a {
+    color: white;
+    line-height: 20px;
+    margin: 0 auto;
+}
+
+#menu #slick-nav #nav {
+    /* display: none; */
+}
+
+#slider {
+    width: 80%;
+    height: auto;
+    margin: 100px 10%;
+}
+
+#slider .section-tittle {
+    text-align: center;
+
+}
+
+#slider .section-tittle h2 {
+    font-size: 44px;
+    color: #023c5a;
+    font-family: "Fredoka One", cursive;
+    font-weight: 900;
+    margin: 50px 0;
+}
+
+#slider .services-active {
+    display: flex;
+    justify-content: space-between;
+}
+
+#slider .services-active .single-services {
+    width: 30%;
+    height: 500px;
+    padding: 0 10px;
+}
+
+#slider .services-active .single-services img {
+    width: 100%;
+    height: auto;
+}
+
+#slider .services-active .single-services .services-caption {
+    width: 80%;
+    height: 120px;
+    background-color: white;
+    box-shadow: 0 10px 20px rgb(2 60 90 / 10%);
+    border-radius: 12px;
+    padding: 10px 30px;
+}
+
+#slider .services-active .single-services .services-caption a {
+    text-decoration: none;
+    color: #023c5a;
+    font-family: "Fredoka One", cursive;
+    font-weight: 700;
+}
+
+#slider .services-img {
+    position: relative;
+}
+
+#slider .services-caption {
+    -webkit-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    -ms-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
+    position: absolute;
+    bottom: -65px;
+    background: #fff;
+    width: 80%;
+    padding-top: 34px;
+    padding-bottom: 25px;
+    padding-left: 29px;
+    padding-right: 15px;
+    left: 0;
+    right: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+    -webkit-box-shadow: 0 10px 20px rgba(2, 60, 90, 0.1);
+    border-radius: 10px;
+}
+
+#about-video {
+    width: 100%;
+    height: auto;
+    background-image: url(https://preview.colorlib.com/theme/thepetcare/assets/img/gallery/section_bg01.png.webp?fbclid=IwAR2a8zTWcAMOk-lm4qkB4M_e4wFfv-c6q0KCOFtea4LIHpkCqcIlnJy75Zk);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+}
+
+#about-video .container {
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: 0 10%;
+    justify-content: space-between;
+
+}
+
+#about-video .selection-left {
+    position: relative;
+    width: 50%;
+    height: auto;
+}
+
+#about-video .selection-left img {
+    width: 100%;
+    height: auto;
+}
+
+#about-video .selection-left .ratting-point {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border-radius: 7px;
+    position: absolute;
+    bottom: 8%;
+    z-index: 1;
+    left: 9%;
+}
+
+#about-video .selection-left .video-icon a.btn-icon {
+    position: relative;
+}
+
+#about-video .selection-left .video-icon a.btn-icon::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    border-radius: inherit;
+    border: 1px solid #0094df;
+    -webkit-animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
+    animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
+}
+
+/* #about-video .selection-left  .video-icon a.btn-icon:hover {
+    color: #fff;
+  } */
+#about-video .selection-left .video-icon a {
+    background: #fff;
+    color: #0094df;
+    font-size: 30px;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 50%;
+}
+
+#about-video .selection-left .features-caption {
+    padding-left: 19px;
+
+}
+
+#about-video .selection-left .features-caption h3 {
+    font-family: "Fredoka One", cursive;
+    font-weight: 700;
+    color: white;
+}
+
+#about-video .container .section-tittle {
+    width: 50%;
+    height: 100%;
+    padding: 50px 50px;
+}
+
+#about-video .container .section-tittle h2 {
+    font-size: 44px;
+    font-family: "Fredoka One", cursive;
+    font-weight: 900;
+    color: #023c5a;
+    margin-bottom: 50px;
+}
+
+#about-video .container .section-tittle p {
+    font-size: 18px;
+    color: #023c5a;
+
+}
+
+#about-video .container .section-tittle .btn {
+    width: 200px;
+    height: 62px;
+    background-color: rgb(255, 62, 126);
+    border-radius: 50px;
+    color: white;
+    font-family: "Fredoka One", cursive;
+    line-height: 44px;
+    font-size: 20px;
+    margin: 20px 0;
+    box-shadow: inset 0 0 0 0 #ad2e59;
+    transition: linear 0.2s;
+    outline: none;
+    z-index: 1;
+    border: 0;
+}
+
+#about-video .container .section-tittle .btn:hover {
+    box-shadow: inset 200px 0 0 0 #ad2e59;
+}
+
+#time {
+    background-image: url(https://preview.colorlib.com/theme/thepetcare/assets/img/gallery/section_bg02.jpg.webp);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#time .time-mg {
+    width: 80%;
+    height: auto;
+    padding: 100px 0;
+}
+
+#time .main-time {
+    width: 385px;
+    height: 450px;
+    margin: 0 10%;
+    background-color: white;
+    box-shadow: 0 10px 20px rgb(2 60 90 / 10%);
+    border-radius: 12px;
+    padding: 50px 30px 35px 40px;
+}
+
+#time .main-time .cat-icon {
+    margin: 0 25px;
+}
+
+#time .main-time h5 {
+    font-size: 30px;
+    font-family: "Fredoka One", cursive;
+    font-weight: 900;
+    color: #023c5a;
+    margin: 10px 30px;
+    text-decoration: none;
+
+}
+
+#time .main-time h5 a {
+    text-decoration: none;
+}
+
+#time .main-time .loan-btn {
+    width: 200px;
+    height: 62px;
+    background-color: rgb(255, 62, 126);
+    border-radius: 50px;
+    color: white;
+    font-family: "Fredoka One", cursive;
+    line-height: 44px;
+    font-size: 15px;
+    margin: 30px 20px;
+    box-shadow: inset 0 0 0 0 #ad2e59;
+    transition: linear 0.2s;
+    outline: none;
+    z-index: 1;
+    border: 0;
+
+
+}
+
+#time .main-time .loan-btn:hover {
+    box-shadow: inset 200px 0 0 0 #ad2e59;
+}
+
+#time .main-time li {
+    list-style: none;
+    font-size: 20px;
+    color: #023c5a;
+
+}
+
+#testimonial-area {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    padding: 150px 0;
+    text-align: center;
+}
+
+#testimonial-area .testimonial-shape {
+    position: absolute;
+    right: -1px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+#testimonial-area .testimonial-area-main {
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+}
+
+#testimonial-area .testimonial-area-main .testimonial-caption {
+    padding: 0 50px;
+    width: 100%;
+    height: auto;
+}
+
+#testimonial-area .testimonial-area-main .testimonial-caption img {
+    margin: 0 auto;
+}
+
+#testimonial-area .testimonial-area-main .testimonial-top-cap p {
+    font-size: 30px;
+    font-family: "Fredoka One", cursive;
+    font-weight: 900;
+    color: #023c5a;
+    margin: 30px 0;
+
+}
+
+#testimonial-area .testimonial-area-main .testimonial-founder span {
+    font-family: "DM Sans", sans-serif;
+    color: #0094DF;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#testimonial-area .testimonial-area-main .testimonial-founder p {
+    color: #57667e;
+    font-weight: 500;
+}
+
+#contact-wrappers {
+    width: 100%;
+    height: auto;
+    background-image: url(https://preview.colorlib.com/theme/thepetcare/assets/img/gallery/section_bg03.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 90px 300px;
+}
+
+#contact-wrappers .container h2 {
+    font-size: 44px;
+    font-family: "Fredoka One", cursive;
+    margin-bottom: 15px;
+    font-weight: 900;
+    color: #fff;
+}
+
+#contact-wrappers .container p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 37px;
+}
+
+#contact-wrappers .container .btn {
+    width: 200px;
+    height: 62px;
+    background: rgb(255, 62, 126);
+    font-family: "DM Sans", sans-serif;
+    text-transform: capitalize;
+    color: #fff !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 30px;
+    line-height: 50px;
+    box-shadow: inset 0 0 0 0 #ad2e59;
+    transition: ease-in 0.2s;
+    outline: none;
+
+}
+
+#contact-wrappers .container .btn:hover {
+    box-shadow: inset 200px 0 0 0 #ad2e59;
+}
+
+#contact-wrappers .container .btn_2 {
+    width: 180px;
+    height: 62px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    border-radius: 50px;
+    padding: 15px 42px 23px 42px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: ease-in 0.2s;
+    outline: none;
+}
+
+#contact-wrappers .container .btn_2:hover {
+    background: white;
+    color: rgb(255, 62, 126);
+}
+
+footer .footer-wrapper {
+    position: relative;
+    background: #eef9ff;
+}
+
+footer .footer-padding {
+    padding-top: 140px;
+    padding-bottom: 10px;
+}
+
+footer .justify-content-between {
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+}
+
+footer.col-12,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-md-10,
+.col-md-3,
+.col-md-4,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-sm-4,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-9 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+footer .col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+footer .single-footer-caption mb-50 {
+    margin-bottom: 50px;
+}
+
+footer .footer-tittle ul {
+    padding: 0;
+}
+
+footer .single-footer-caption mb-20 {
+    margin-bottom: 20px;
+}
+
+footer .mb-35 {
+    margin-bottom: 35px;
+}
+
+footer .offset-xl-1 {
+    margin-left: 8.333333%;
+}
+
+footer .mb-10 {
+    margin-bottom: 10px;
+}
+
+footer .mb-20 {
+    margin-bottom: 20px;
+}
+
+footer form {
+    position: relative;
+}
+
+footer input {
+    background-color: #eef9ff;
+    width: 100%;
+    height: 50px;
+    color: rgb(35, 47, 85);
+    padding: 10px 20px;
+    border: 1px solid rgb(35, 47, 85);
+    border-radius: 30px;
+    overflow: visible;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0px;
+
+}
+
+footer .footer-area .footer-form form .form-icon button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    line-height: 3;
+    background: none;
+    border-width: 0px;
+    border-radius: 0px 3px 3px 0px;
+}
+
+footer .footer-area .footer-tittle ul li a {
+    color: rgb(35, 47, 85);
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: underline transparent;
+}
+
+footer .footer-area .footer-tittle ul li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+footer .footer-area .footer-tittle ul li:hover a {
+    text-decoration: 1px solid rgb(35, 47, 85);
+}
+
+footer .footer-area .footer-tittle h4 {
+    margin-bottom: 30px;
+    font-family: "Fredoka One", cursive;
+    font-weight: 900;
+}
+
+footer i {
+    color: #212529;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all 0.6s ease-in-out;
+}
+
+footer i:hover {
+    transform: rotateY(180deg);
+    color: rgb(255, 62, 126);
+}
+
+footer .footer-bottom-area {
+    margin-top: 50px;
+
+}
+
+footer .footer-bottom-area a {
+    color: rgb(255, 62, 126);
+    text-decoration: none;
+}
+
+footer .footer-bottom-area i {
+    color: rgb(255, 62, 126);
+}
+
+@media only screen and (min-width: 1024px) {
+    @import url(main.js);
+}
+
+@media only screen and (max-width: 1024px) {
+    #about-video {
+        padding-top: 0;
+    }
+
+    #about-video .container .section-tittle {
+        padding: 0;
+        padding-left: 20px;
+
+    }
+
+    #about-video .container .section-tittle h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    #about-video .container .section-tittle p {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    #slider {
+        margin: 50px 10%;
+        margin-bottom: 0;
+    }
+
+    #slider .services-active .single-services {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #menu .main-menu #nav {
+        display: none;
+    }
+
+    #menu #slick-nav {
+        display: block;
+    }
+
+    #slider .single-services .services-caption {
+        height: 60px;
+    }
+
+    #slider .single-services .services-caption a {
+        font-size: 15px;
+    }
+
+    #about-video .container {
+        flex-direction: column;
+    }
+
+    #about-video .selection-left {
+        width: 100%;
+    }
+
+    #about-video .container .section-tittle {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    #contact-wrappers {
+        padding: 50px 50px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #header .header-info-left ul {
+        padding: 0;
+    }
+
+    #header .header-info-right ul li {
+        font-size: 10px;
+    }
+
+    #menu #about h1 {
+        font-size: 30px;
+    }
+
+    #menu #about p {
+        font-size: 20px;
+    }
+
+    #menu #about .pets-bye {
+        width: 80%;
+        height: 150px;
+    }
+
+    #menu #about .pets-bye .pets-contact {
+        margin-right: 10px;
+        align-items: center;
+    }
+
+    #menu #about .pets-bye .pets-contact h2 {
+        font-size: 15px;
+    }
+
+    #time .main-time {
+        width: 300px;
+        padding: 50px 30px;
+    }
+
+    #time .main-time h5 {
+        font-size: 20px;
+    }
+
+    #time .main-time li {
+        font-size: 15px;
+    }
+
+    #testimonial-area {
+        padding: 120px 0;
+    }
+
+    #testimonial-area .testimonial-area-main .testimonial-caption {
+        padding: 0 10px;
+    }
+
+    #testimonial-area .testimonial-caption .testimonial-top-cap p {
+        font-size: 15px;
+        margin: 5px 0;
+    }
+
+    #contact-wrappers .container h2 {
+        font-size: 30px;
+    }
+
+    #contact-wrappers .container p {
+        font-size: 15px;
+    }
+
+    #contact-wrappers .container .btn_2 {}
+
+    #contact-wrappers .container .btn {
+        /* margin-top: 40px; */
+    }
+
+    footer .row {
+        flex-direction: column;
+    }
+
+    footer .offset-xl-1 {
+        margin: 0;
+    }
+}
