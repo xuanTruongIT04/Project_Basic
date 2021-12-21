@@ -84,9 +84,9 @@ input:focus::-moz-placeholder {
 }
 
 #header .first {
-    width: 85%;
+    width: 80%;
     height: 40px;
-    margin: 0 7%;
+    margin: 0 8%;
     display: inline-flex;
     justify-content: space-between;
 }
@@ -124,18 +124,19 @@ input:focus::-moz-placeholder {
 #menu {
     background-image: url(https://preview.colorlib.com/theme/thepetcare/assets/img/hero/xh1_hero1.png.pagespeed.ic.DxzVz30PxQ.webp);
     width: 100%;
-    height: 750px;
+    height: 800px;
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #menu #first {
-    width: 80%;
+    width: 77%;
     height: 80px;
     display: flex;
     justify-content: space-between;
     line-height: 80px;
-    margin: 0 10%;
+    margin: 0 auto;
 }
 
 #menu .main-menu #nav {
@@ -192,13 +193,13 @@ input:focus::-moz-placeholder {
 #menu #first .main-menu #nav .header-right-btn a {
     color: white;
     font-family: "Fredoka One", cursive;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 #menu #about {
-    width: 80%;
+    width: 77%;
     height: auto;
-    margin: 0 10%;
+    margin: 0 auto;
 }
 
 #menu #about .hero-caption {
@@ -208,13 +209,15 @@ input:focus::-moz-placeholder {
 #menu #about h1 {
     font-size: 70px;
     font-family: "Fredoka One", cursive;
-    font-weight: 900;
+    font-weight: 500;
     color: #023c5a;
 }
 
 #menu #about p {
-    font-family: "Fredoka One", cursive;
+    font-family: "DM Sans", sans-serif;
     font-size: 25px;
+    font-weight: normal;
+    margin: 30px 0;
 }
 
 #menu #about .hero-btn {
@@ -255,7 +258,7 @@ input:focus::-moz-placeholder {
 
 #menu #about .pets-contact h2 {
     font-size: 20px;
-    font-weight: 900;
+    font-weight: 400;
     font-family: "Fredoka One", cursive;
     margin: 0 10px;
 }
@@ -354,9 +357,9 @@ input:focus::-moz-placeholder {
 }
 
 #slider {
-    width: 80%;
+    width: 77%;
     height: auto;
-    margin: 100px 10%;
+    margin: 100px auto;
 }
 
 #slider .section-tittle {
@@ -368,7 +371,7 @@ input:focus::-moz-placeholder {
     font-size: 44px;
     color: #023c5a;
     font-family: "Fredoka One", cursive;
-    font-weight: 900;
+    font-weight: 500;
     margin: 50px 0;
 }
 
@@ -401,7 +404,9 @@ input:focus::-moz-placeholder {
     text-decoration: none;
     color: #023c5a;
     font-family: "Fredoka One", cursive;
-    font-weight: 700;
+    font-weight: normal;
+    font-size: 20px;
+    margin: 5px 0;
 }
 
 #slider .services-img {
@@ -520,20 +525,21 @@ input:focus::-moz-placeholder {
 
 #about-video .selection-left .features-caption h3 {
     font-family: "Fredoka One", cursive;
-    font-weight: 700;
+    font-weight: 500;
     color: white;
 }
 
 #about-video .container .section-tittle {
     width: 50%;
     height: 100%;
-    padding: 50px 50px;
+    padding: 50px 0;
+    padding-left: 90px;
 }
 
 #about-video .container .section-tittle h2 {
     font-size: 44px;
     font-family: "Fredoka One", cursive;
-    font-weight: 900;
+    font-weight: 500;
     color: #023c5a;
     margin-bottom: 50px;
 }
@@ -580,7 +586,7 @@ input:focus::-moz-placeholder {
 }
 
 #time .main-time {
-    width: 385px;
+    width: 425px;
     height: 450px;
     margin: 0 10%;
     background-color: white;
@@ -594,17 +600,18 @@ input:focus::-moz-placeholder {
 }
 
 #time .main-time h5 {
-    font-size: 30px;
+    font-size: 35px;
     font-family: "Fredoka One", cursive;
-    font-weight: 900;
+    font-weight: 500;
     color: #023c5a;
-    margin: 10px 30px;
+    margin: 20px 30px;
     text-decoration: none;
 
 }
 
 #time .main-time h5 a {
     text-decoration: none;
+    color: #023c5a;
 }
 
 #time .main-time .loan-btn {
@@ -613,15 +620,16 @@ input:focus::-moz-placeholder {
     background-color: rgb(255, 62, 126);
     border-radius: 50px;
     color: white;
-    font-family: "Fredoka One", cursive;
-    line-height: 44px;
-    font-size: 15px;
-    margin: 30px 20px;
+    font-family: "DM Sans", sans-serif;
+    line-height: 50px;
+    font-size: 20px;
+    margin: 20px 20px;
     box-shadow: inset 0 0 0 0 #ad2e59;
     transition: linear 0.2s;
     outline: none;
     z-index: 1;
     border: 0;
+    font-weight: normal;
 
 
 }
@@ -641,13 +649,13 @@ input:focus::-moz-placeholder {
     position: relative;
     width: 100%;
     height: 650px;
-    padding: 150px 0;
+    padding: 150px 100px;
     text-align: center;
 }
 
 #testimonial-area .testimonial-shape {
     position: absolute;
-    right: -1px;
+    right: 0px;
     top: 50%;
     transform: translateY(-50%);
     z-index: -1;
@@ -675,7 +683,7 @@ input:focus::-moz-placeholder {
 #testimonial-area .testimonial-area-main .testimonial-top-cap p {
     font-size: 30px;
     font-family: "Fredoka One", cursive;
-    font-weight: 900;
+    font-weight: 500;
     color: #023c5a;
     margin: 30px 0;
 
@@ -685,12 +693,12 @@ input:focus::-moz-placeholder {
     font-family: "DM Sans", sans-serif;
     color: #0094DF;
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 #testimonial-area .testimonial-area-main .testimonial-founder p {
     color: #57667e;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 #contact-wrappers {
@@ -702,11 +710,11 @@ input:focus::-moz-placeholder {
     padding: 90px 300px;
 }
 
-#contact-wrappers .container h2 {
+contact-wrappers .container h2 {
     font-size: 44px;
     font-family: "Fredoka One", cursive;
     margin-bottom: 15px;
-    font-weight: 900;
+    font-weight: 500;
     color: #fff;
 }
 
@@ -751,6 +759,7 @@ input:focus::-moz-placeholder {
     text-decoration: none;
     transition: ease-in 0.2s;
     outline: none;
+    margin-right: 10px;
 }
 
 #contact-wrappers .container .btn_2:hover {
@@ -898,7 +907,7 @@ footer .footer-area .footer-tittle ul li:hover a {
 footer .footer-area .footer-tittle h4 {
     margin-bottom: 30px;
     font-family: "Fredoka One", cursive;
-    font-weight: 900;
+    font-weight: 500;
 }
 
 footer i {
@@ -927,11 +936,11 @@ footer .footer-bottom-area i {
     color: rgb(255, 62, 126);
 }
 
-@media only screen and (min-width: 1024px) {
-    @import url(main.js);
-}
+@media (max-width: 1199.98px) {
+    #menu .main-menu #nav li a {
+        margin: 0 12px;
+    }
 
-@media only screen and (max-width: 1024px) {
     #about-video {
         padding-top: 0;
     }
@@ -940,6 +949,10 @@ footer .footer-bottom-area i {
         padding: 0;
         padding-left: 20px;
 
+    }
+
+    #contact-wrappers .container .btn_2 {
+        margin-right: 0;
     }
 
     #about-video .container .section-tittle h2 {
@@ -1029,19 +1042,6 @@ footer .footer-bottom-area i {
         font-size: 15px;
     }
 
-    #time .main-time {
-        width: 300px;
-        padding: 50px 30px;
-    }
-
-    #time .main-time h5 {
-        font-size: 20px;
-    }
-
-    #time .main-time li {
-        font-size: 15px;
-    }
-
     #testimonial-area {
         padding: 120px 0;
     }
@@ -1063,17 +1063,34 @@ footer .footer-bottom-area i {
         font-size: 15px;
     }
 
-    #contact-wrappers .container .btn_2 {}
-
-    #contact-wrappers .container .btn {
-        /* margin-top: 40px; */
-    }
-
     footer .row {
         flex-direction: column;
     }
 
     footer .offset-xl-1 {
         margin: 0;
+    }
+}
+
+@media (max-width: 414px) {
+    #about .pets-bye .pets-contact img {
+        display: none;
+    }
+
+    #contact-wrappers .container .btn {
+        margin-top: 40px;
+    }
+
+    #time .main-time {
+        width: 300px;
+        padding: 50px 30px;
+    }
+
+    #time .main-time h5 {
+        font-size: 20px;
+    }
+
+    #time .main-time li {
+        font-size: 15px;
     }
 }

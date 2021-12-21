@@ -78,9 +78,10 @@ input:focus::-moz-placeholder {
 }
 
 .d-none {
-    width: 80%;
+    width: 77%;
     height: auto;
     margin: 0 auto;
+    margin-top: 100px;
 }
 
 #header {
@@ -90,9 +91,9 @@ input:focus::-moz-placeholder {
 }
 
 #header .first {
-    width: 85%;
+    width: 80%;
     height: 40px;
-    margin: 0 7%;
+    margin: 0 8%;
     display: inline-flex;
     justify-content: space-between;
 }
@@ -136,12 +137,12 @@ input:focus::-moz-placeholder {
 }
 
 #menu #first {
-    width: 80%;
+    width: 77%;
     height: 80px;
     display: flex;
     justify-content: space-between;
     line-height: 80px;
-    margin: 0 10%;
+    margin: 0 auto;
 }
 
 #menu .main-menu #nav {
@@ -198,11 +199,11 @@ input:focus::-moz-placeholder {
 #menu #first .main-menu #nav .header-right-btn a {
     color: white;
     font-family: "Fredoka One", cursive;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 #menu .hero-caption {
-    width: 80%;
+    width: 77%;
     height: auto;
     margin: 0 auto;
 }
@@ -211,7 +212,7 @@ input:focus::-moz-placeholder {
     color: #023C5A;
     margin-top: 50px;
     font-size: 54px;
-    font-weight: 900;
+    font-weight: 500;
 }
 
 #menu .hero-caption p {
@@ -320,13 +321,14 @@ input:focus::-moz-placeholder {
 }
 
 #row {
-    width: 80%;
+    width: 77%;
     height: auto;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0 auto;
+    margin-bottom: 100px;
 
 }
 
@@ -576,7 +578,7 @@ footer .footer-area .footer-tittle ul li:hover a {
 footer .footer-area .footer-tittle h4 {
     margin-bottom: 30px;
     font-family: "Fredoka One", cursive;
-    font-weight: 900;
+    font-weight: 500;
 }
 
 footer i {
@@ -607,6 +609,16 @@ footer .footer-bottom-area i {
 
 footer .footer-tittle ul {
     padding: 0;
+}
+
+#menu .main-menu #nav li a {
+    margin: 0 12px;
+}
+
+@media screen and (max-width: 1024px) {
+    #menu .main-menu #nav li a {
+        margin: 0 12px;
+    }
 }
 
 @media screen and (max-width: 768px) {
