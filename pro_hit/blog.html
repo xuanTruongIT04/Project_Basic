@@ -1,563 +1,734 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Import link css -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/style-bonus.css">
+    <link rel="stylesheet" href="./assets/css/responsive-bonus.css">
+
+    <!-- Import link bootstrap  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Import link font  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Fredoka+One&display=swap"
+        rel="stylesheet">
+    <!-- Import link favicon -->
+    <link rel="icon"
+        href="https://preview.colorlib.com/theme/thepetcare/assets/img/icon/xfavicon.png.pagespeed.ic.-Fzm9OQDkX.webp"
+        type="image/x-icon" />
+
     <title>Pet Template</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon/xfavicon.png.pagespeed.ic.-Fzm9OQDkX.webp">
-    <link rel="stylesheet" href="assets/css/blog1.css">
-    <link rel="stylesheet" href="assets/css/blog2.css">
 </head>
 
 <body>
-    <header>
-        <div class="header-area header-transparent">
-            <div class="main-header ">
-                <div class="header-top d-none d-sm-block">
+
+    <div id="wrapper">
+        <div id="header">
+            <div class="single-slide-1">
+                <div id="header-top">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xl-12">
-                                <div class="d-flex justify-content-between flex-wrap align-items-center">
-                                    <div class="header-info-right">
-                                        <ul class="header-social">
-                                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                            <li> <a href="#"><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        </ul>
-                                    </div>
+                            <div class="col-md-12">
+                                <div class="header-info d-flex justify-content-between align-items-center">
                                     <div class="header-info-left">
-                                        <ul>
-                                            <li><i class="fas fa-map-marker-alt"></i>78/A, Green lane, NYC</li>
-                                            <li><i class="fas fa-phone-alt"></i>+10 (78) 367 3674</li>
+                                        <ul class="header-social d-flex align-items-center">
+                                            <li>
+                                                <a href="">
+                                                    <i class="fab fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <i class="fab fa-linkedin-in"></i>
+                                                </a>
+                                            </li>
                                         </ul>
                                     </div>
+                                    <ul class="header-info-right d-flex">
+                                        <li>
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span>78/A, Green lane, NYC</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-phone"></i>
+                                            <span>+10 (78) 367 3674</span>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="header-bottom  header-sticky">
+
+                <div id="header-bottom">
                     <div class="container">
-                        <div class="row align-items-center">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="d-flex justify-content-between nav">
+                                    <a href="" class="logo">
+                                        <img src="data:image/webp;base64,UklGRuQHAABXRUJQVlA4TNgHAAAvooAKECI6s7UtkhvZDjlkFjPT7vftRmZmpoiZmZmZmZmZmZmZmdmOVtJ81KPqid9ckG3WNVY8pfQxZ4pMotAwmkip/BPYbZqqNjOzU0cTmSlldteX+we0IZC7bdvxNzkyZbS5OhmNybbqbnY7Bf9AbWOzbdv9xtq2dcqBbNu0Lee2bdu2bdv2nvPt6EXmt20rsm3bNqMrBQwAApBs2/ZF4+2kZiTbttVs29GOtqptaw7cSJKaaq5VdqFnCMskTyCtCsmIAmjFcBLHowyfcQQAHB4z2MVxBCOrKRGJYXeGhzn+gFoM3jPcyKAFJRgx6MfgIUzE8DIn2lMCESdKOVyCqTjsKCRTKEGoBKVAhoM4foG5GL7Kx66UEFTPcDbDM3AmBpsKyRhyv2roj+d4BU7FYF9JreHkdtVQF8rgtFk68j72q7I6i9IEx/XkdjHcDlH9GzbWvy5pZTb6rHTVS4oxdaIYjCV3i8FQeT3pS5Yz3qU57UeOyf61U+Si6qYCfsl2b6hxsEy5aeFKjw0k22D4L59oS24WI6sZ/IaoOR+Xmn+Rh4t+ZNnqVzkoVGZsIL/64TIlO7z5vWZaqDQnhcIHh5d1DKWTi8XwBCRNfyvPRDPsjDTS3FE/84kOaj9o09tQuDKz45Ven67XDAsDzSi0/o0j9np8wz7v7trvz2P7e0rSKFOr9deR4rrB+nK+TNs/PFZrmMMRKWccNzOiBxkp8DwjP3lkFseBWcDLBnn6YimuCiBriT8N7hmu19TmR0IBqHyizLddFxgrEaKkkSaY2q6IglqHBLf0XRnL9/urS/ysM1wAdVCIwYU8opz0igB4RvmSnHK8E1I8lYasGf+2umeMcdaW2RkG9T/06bbCXCtRJz56xlq74obVTn32mupgi4OHzDtnzKIrF/7qDOfDaBXIRURGiQsd3AZ48Tx8VOV21P+97hms1diqt1Oh+o06Xebpkzjg5jVFFFbauMY5bz+xZ7x858pf/wmf7X/jiit+/iOciRnKNIEoEi7wqiEpnZfIU2aT48rGcAkA2OduktEm2Jk9WGL6I0csvuGK5ZffMUh9M5ENdu5m7QkPn/lf7iEa6GgGURJALj4UA0D6Y/ECiN+utsFkht8A1HvcqdaFGn8DwMDvxx18v8++Sy/acdYvjTRLyybT1a9WKSlQjHU2HqH8fNdzp5z56j1rj7n7iLVpUwLJQBxoDQCxii0tmIpr+8VeUoz5vWVZqhM0A4Z+NmeLgU8O27HD4jNGjVY85J2B86r1EmGrVReh6oRNYUUEJSc/eWn3C2fYva+cd/yDJ+wZvuL44z5DUtK9CLKx25hMyUkAgNzH+qknZovDTKdoQiAGswGUbPfm+/7dDY9v3G7GN9sO3TBWT6pWKvWebkGJPev1B5vs3eeQ4Ba7s7umtgnyibaGFAsGorTy2w2FXjXjVek2vpoDh5eZKPCQEfLlhRTmkNGFQAz3C29Yv/cCO8AKy+74btPJr2w86YVRKhqZYy/489PsdunfKOHta4aQadUNA4ojx0Sts9kMSVYzHoCQQgDJjz0AmhCIGNwUiO0bnXOq2mW6CdMSO1934RoKysONP7nd9IMjtj9x1P43rtIc2c1d9aFYxJgNay1kIBLzECUBpCnjqGE2oSMluMi2BgBdCOQBqDAYx+810wIwyt1ltpn+xciF/UrGuhk4v9pec39ZZHCt+edN+u/8D19ZEz0LUU87mY/lU3CiPQBoujigNQAvjHLCXRKM5jzAY0QPbQgcfgJo7/+JDyf5ud6uJ1/YZf8VZz77wZpraBOkDKSNSYeUUqTEORobWWkielU06nXSW5eep+ojI6x7Yq+L/aXu62APhtfM8JKBOlGNgTwyS0knMghBaGDGu6tYp/oBDhqaRCkeTeeEQhcJUmIWgvB7eGGHOF1bKox+4RjZlQYHJ3KIyi3DywAwvlWc8rECBquIyDgZQXxpLRiQCDWYhMBxPQCMboFTPlTQ0QhtRRVl4QWiD2E2NXAayC/eUKKTBpMQOgIA4tUbyCMbnRABQDISJtEsCQ+fwXwcSk6KIZgThodRWnUimIVQj6wAADSJV5vB5/JkmBMoo63vcoBBdZhUeUNo9MqAYQhCx2ed0cK0J6V0tV+UVczOERFJlR4CtdVIsXiqIicDxYs3ZxgCx6UAsLyjrLX2qI/PGaNYwaCX/qnzNIEHSQ/IJWUvQRrI6UvsVOucMINHRCSVL6QqXwLDELjhXI5/APxgrbU3Dzu2yFqbt7rg4zcO4fikkAxpFKc7xfC4fKpnhj8PfoUsRxNN67DlocNOevyCkwbHueRaMbKKw19pIDD01FK+7/s3jT/YY5KPKwDP3Lzx05Mu/vmLzM3SyvGNC/881EzJLa1tAvT9kWoX+GhE+UwHzYFY2XXTRNM67XHrIpEmisnYxSokExg8Fwau7SwALzei3/ZkAKSfAP2PSLe5q4TlGQDAR+RqMewiDOzAEYCR5rTw/dqFvlS0R4cm1toWwt/tnCgkd+t2dLCX+AsAhD4vCwbKTQ3n+02F0uYN8c3LsSe5XfmwAPZZyMt10h9yv4hGnjnaW3Z5R3EEDlPJ/co0uVkCI6/q5I90cAgAvCbuAXz47Om+wlWUCLSL+9uHMfFLBkMGNOjYXM2F5msKJys5/n1zl+dSQlARRYKBk+7jDQooUYgA"
+                                            alt="">
+                                    </a>
+                                    <ul id="main-menu">
+                                        <li>
+                                            <a href="./index.html">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="./services.html">Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="./about.html">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="./blog.html">Blog</a>
+                                            <ul class="sub-main-menu">
+                                                <li>
+                                                    <a href="./blog.html">Blog</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./blog_details.html">Blog Details</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./elements.html">Elements</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="./contact.html">Contact</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-1">Get Quote</a>
+                                        </li>
+                                    </ul>
 
-                            <div class="col-xl-2 col-lg-2">
-                                <div class="logo">
-                                    <a href="index.html"><img
-                                            src="https://preview.colorlib.com/theme/thepetcare/assets/img/logo/xlogo2_footer.png.pagespeed.ic.2Fh043loGz.webp"
-                                            alt=""></a>
                                 </div>
                             </div>
-                            <div class="col-xl-10 col-lg-10">
-
-                                <div class="main-menu f-right d-none d-lg-block">
-                                    <nav>
-                                        <ul id="navigation">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="blog.html">Blog</a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="blog_details.html">Blog Details</a></li>
-                                                    <li><a href="elements.html">Elements</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li>
-                                                <div class="header-right-btn f-right  ml-2">
-                                                    <a href="#" class="header-btn">Get Quote</a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-
+                        </div>
+                        <div class="row slicknav_menu">
                             <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
+                                <div class="res-mn">
+                                    <div class="open-res-mn">
+                                        <a href="#">
+                                            MENU
+                                            <i class="fas fa-bars"></i>
+                                        </a>
+                                    </div>
+                                    <ul id="responsive-main-menu">
+                                        <li>
+                                            <a href="#index.html">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="./services.html">Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="./about.html">About</a>
+                                        </li>
+                                        <li class="icon">
+                                            <i class="fas fa-chevron-down icon-open-mn"></i>
+                                            <a href="./blog.html">Blog</a>
+                                            <ul class="sub-responsive-main-menu">
+                                                <li>
+                                                    <a href="./blog.html">Blog</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./blog_details.html">Blog Details</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./elements.html">Elements</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="./contact.html">Contact</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-1 mt-10">Get Quote</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
-            </div>
-        </div>
-    </header>
-    <main>
 
-        <div class="slider-area">
-            <div class="single-sliders slider-height2 slider-bg2 d-flex align-items-center">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-xl-5 col-lg-6 col-md-6">
-                            <div class="hero-caption hero-caption2">
-                                <h2>Blog</h2>
-                                <p>Far far away, behind the word mountains, far from the countries vokalia.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                <!-- End: header -->
 
-
-        <section class="blog_area section-padding">
-            <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 mb-5 mb-lg-0">
-                        <div class="blog_left_sidebar">
-                            <article class="blog_item">
-                                <div class="blog_item_img">
-                                    <img class="card-img rounded-0"
-                                        src="https://preview.colorlib.com/theme/thepetcare/assets/img/blog/xsingle_blog_1.jpg.pagespeed.ic.crhqX85fp0.webp"
-                                        alt="">
-                                    <a href="#" class="blog_item_date">
-                                        <h3>15</h3>
-                                        <p>Jan</p>
-                                    </a>
-                                </div>
-                                <div class="blog_details">
-                                    <a class="d-inline-block" href="blog_details.html">
-                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey
-                                            office</h2>
-                                    </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is
-                                        that he earth it first without heaven in place seed it second morning saying.
-                                    </p>
-                                    <ul class="blog-info-link">
-                                        <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                        <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
-                                    </ul>
-                                </div>
-                            </article>
-                            <article class="blog_item">
-                                <div class="blog_item_img">
-                                    <img class="card-img rounded-0"
-                                        src="https://preview.colorlib.com/theme/thepetcare/assets/img/blog/xsingle_blog_2.jpg.pagespeed.ic.QwFRAzu_NP.webp"
-                                        alt="">
-                                    <a href="#" class="blog_item_date">
-                                        <h3>15</h3>
-                                        <p>Jan</p>
-                                    </a>
-                                </div>
-                                <div class="blog_details">
-                                    <a class="d-inline-block" href="blog_details.html">
-                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey
-                                            office</h2>
-                                    </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is
-                                        that he earth it first without heaven in place seed it second morning saying.
-                                    </p>
-                                    <ul class="blog-info-link">
-                                        <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                        <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
-                                    </ul>
-                                </div>
-                            </article>
-                            <article class="blog_item">
-                                <div class="blog_item_img">
-                                    <img class="card-img rounded-0"
-                                        src="https://preview.colorlib.com/theme/thepetcare/assets/img/blog/xsingle_blog_3.jpg.pagespeed.ic.D3so3ZMyuT.webp"
-                                        alt="">
-                                    <a href="#" class="blog_item_date">
-                                        <h3>15</h3>
-                                        <p>Jan</p>
-                                    </a>
-                                </div>
-                                <div class="blog_details">
-                                    <a class="d-inline-block" href="blog_details.html">
-                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey
-                                            office</h2>
-                                    </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is
-                                        that he earth it first without heaven in place seed it second morning saying.
-                                    </p>
-                                    <ul class="blog-info-link">
-                                        <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                        <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
-                                    </ul>
-                                </div>
-                            </article>
-                            <article class="blog_item">
-                                <div class="blog_item_img">
-                                    <img class="card-img rounded-0"
-                                        src="https://preview.colorlib.com/theme/thepetcare/assets/img/blog/xsingle_blog_4.jpg.pagespeed.ic.sPLUurA5SD.webp"
-                                        alt="">
-                                    <a href="#" class="blog_item_date">
-                                        <h3>15</h3>
-                                        <p>Jan</p>
-                                    </a>
-                                </div>
-                                <div class="blog_details">
-                                    <a class="d-inline-block" href="blog_details.html">
-                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey
-                                            office</h2>
-                                    </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is
-                                        that he earth it first without heaven in place seed it second morning saying.
-                                    </p>
-                                    <ul class="blog-info-link">
-                                        <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                        <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
-                                    </ul>
-                                </div>
-                            </article>
-                            <article class="blog_item">
-                                <div class="blog_item_img">
-                                    <img class="card-img rounded-0"
-                                        src="https://preview.colorlib.com/theme/thepetcare/assets/img/blog/xsingle_blog_5.jpg.pagespeed.ic.iAJ-fvqdoP.webp"
-                                        alt="">
-                                    <a href="#" class="blog_item_date">
-                                        <h3>15</h3>
-                                        <p>Jan</p>
-                                    </a>
-                                </div>
-                                <div class="blog_details">
-                                    <a class="d-inline-block" href="blog_details.html">
-                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey
-                                            office</h2>
-                                    </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is
-                                        that he earth it first without heaven in place seed it second morning saying.
-                                    </p>
-                                    <ul class="blog-info-link">
-                                        <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                        <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
-                                    </ul>
-                                </div>
-                            </article>
-                            <nav class="blog-pagination justify-content-center d-flex">
-                                <ul class="pagination">
-                                    <li class="page-item">
-                                        <a href="#" class="page-link" aria-label="Previous">
-                                            <i class="ti-angle-left"></i>
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="#" class="page-link">1</a>
-                                    </li>
-                                    <li class="page-item active">
-                                        <a href="#" class="page-link">2</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="#" class="page-link" aria-label="Next">
-                                            <i class="ti-angle-right"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog_right_sidebar">
-                            <aside class="single_sidebar_widget search_widget">
-                                <form action="#">
-                                    <div class="form-group m-0">
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="Search Keyword">
-                                            <div class="input-group-append">
-                                                <button class="boxed-btn2" type="button">Search</button>
-                                            </div>
+                    <div class="col-md-12">
+                        <div id="slide">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xl-5 col-lg-6 col-md-6">
+                                        <div class="hero-caption hero-caption-1">
+                                            <h2>Blog</h2>
+                                            <p>Far far away, behind the word mountains, far from the countries vokalia.
+                                            </p>
                                         </div>
                                     </div>
-                                </form>
-                            </aside>
-                            <aside class="single_sidebar_widget post_category_widget">
-                                <h4 class="widget_title" style="color: #2d2d2d;">Category</h4>
-                                <ul class="list cat-list">
-                                    <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Resaurant food</p>
-                                            <p>(37)</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Travel news</p>
-                                            <p>(10)</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Modern technology</p>
-                                            <p>(03)</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Product</p>
-                                            <p>(11)</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Inspiration</p>
-                                            <p>21</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Health Care (21)</p>
-                                            <p>09</p>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </aside>
-                            <aside class="single_sidebar_widget popular_post_widget">
-                                <h3 class="widget_title" style="color: #2d2d2d;">Recent Post</h3>
-                                <div class="media post_item">
-                                    <img src="https://preview.colorlib.com/theme/thepetcare/assets/img/post/xpost_1.jpg.pagespeed.ic.b6nLp44f-A.webp"
-                                        alt="post">
-                                    <div class="media-body">
-                                        <a href="blog_details.html">
-                                            <h3 style="color: #2d2d2d;">From life was you fish...</h3>
-                                        </a>
-                                        <p>January 12, 2019</p>
-                                    </div>
                                 </div>
-                                <div class="media post_item">
-                                    <img src="https://preview.colorlib.com/theme/thepetcare/assets/img/post/xpost_2.jpg.pagespeed.ic.EZ5IB7GUGS.webp"
-                                        alt="post">
-                                    <div class="media-body">
-                                        <a href="blog_details.html">
-                                            <h3 style="color: #2d2d2d;">The Amazing Hubble</h3>
-                                        </a>
-                                        <p>02 Hours ago</p>
-                                    </div>
-                                </div>
-                                <div class="media post_item">
-                                    <img src="https://preview.colorlib.com/theme/thepetcare/assets/img/post/xpost_3.jpg.pagespeed.ic.Y7kKPYX1Ma.webp"
-                                        alt="post">
-                                    <div class="media-body">
-                                        <a href="blog_details.html">
-                                            <h3 style="color: #2d2d2d;">Astronomy Or Astrology</h3>
-                                        </a>
-                                        <p>03 Hours ago</p>
-                                    </div>
-                                </div>
-                                <div class="media post_item">
-                                    <img src="https://preview.colorlib.com/theme/thepetcare/assets/img/post/xpost_4.jpg.pagespeed.ic.yP3D4MyZ_U.webp"
-                                        alt="post">
-                                    <div class="media-body">
-                                        <a href="blog_details.html">
-                                            <h3 style="color: #2d2d2d;">Asteroids telescope</h3>
-                                        </a>
-                                        <p>01 Hours ago</p>
-                                    </div>
-                                </div>
-                            </aside>
-                            <aside class="single_sidebar_widget tag_cloud_widget">
-                                <h4 class="widget_title" style="color: #2d2d2d;">Tag Clouds</h4>
-                                <ul class="list">
-                                    <li>
-                                        <a href="#">project</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">love</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">technology</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">travel</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">restaurant</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">life style</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">design</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">illustration</a>
-                                    </li>
-                                </ul>
-                            </aside>
-                            <aside class="single_sidebar_widget instagram_feeds">
-                                <h4 class="widget_title" style="color: #2d2d2d;">Instagram Feeds</h4>
-                                <ul class="instagram_row flex-wrap">
-                                    <li>
-                                        <a href="#">
-                                            <img class="img-fluid"
-                                                src="https://preview.colorlib.com/theme/thepetcare/assets/img/post/xpost_5.jpg.pagespeed.ic.6uccBsOBRz.webp"
-                                                alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img class="img-fluid"
-                                                src="https://preview.colorlib.com/theme/thepetcare/assets/img/post/xpost_6.jpg.pagespeed.ic.BgB7ZoApSh.webp"
-                                                alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img class="img-fluid"
-                                                src="https://preview.colorlib.com/theme/thepetcare/assets/img/post/xpost_7.jpg.pagespeed.ic.zr6b7EBuiM.webp"
-                                                alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img class="img-fluid"
-                                                src="https://preview.colorlib.com/theme/thepetcare/assets/img/post/xpost_8.jpg.pagespeed.ic.r2dZPIfpQ6.webp"
-                                                alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img class="img-fluid"
-                                                src="https://preview.colorlib.com/theme/thepetcare/assets/img/post/xpost_9.jpg.pagespeed.ic.XAu-nZ8b4Z.webp"
-                                                alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img class="img-fluid"
-                                                src="https://preview.colorlib.com/theme/thepetcare/assets/img/post/xpost_10.jpg.pagespeed.ic.VbUYrTwO92.webp"
-                                                alt="">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </aside>
-                            <aside class="single_sidebar_widget newsletter_widget">
-                                <h4 class="widget_title" style="color: #2d2d2d;">Newsletter</h4>
-                                <form action="#">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" onfocus="this.placeholder = ''"
-                                            onblur="this.placeholder = 'Enter email'" placeholder='Enter email'
-                                            required>
-                                    </div>
-                                    <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-                                        type="submit">Subscribe</button>
-                                </form>
-                            </aside>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- End: slide -->
             </div>
-        </section>
+        </div>
+        <!-- End: header -->
 
-    </main>
-    <footer>
-        <div class="footer-wrapper gray-bg">
-            <div class="footer-area footer-padding">
+        <div id="wp-content">
+            <div class="container">
+                <div class="blog-section">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="list-post">
+                                <div class="item-post">
+                                    <div class="thumb-post">
+                                        <img src="https://preview.colorlib.com/theme/thepetcare/assets/img/blog/xsingle_blog_1.jpg.pagespeed.ic.crhqX85fp0.webp"
+                                            alt="">
+                                        <a href="" class="post-date">
+                                            <span class="post-date-day">15</span> <BR>
+                                            <span class="post-date-month">Jan</span>
+                                        </a>
+                                    </div>
+                                    <div class="desc-post">
+                                        <a href="" class="desc-post-title">
+                                            <h2>Google inks pact for new 35-storey office</h2>
+                                        </a>
+                                        <p>That dominion stars lights dominion divide years for fourth have don't stars
+                                            is
+                                            that he earth it first without heaven in place seed it second morning
+                                            saying.
+                                        </p>
+                                        <ul class="post-info-link d-flex">
+                                            <li>
+                                                <a href="">
+                                                    <i class="fas fa-user"></i>
+                                                    Travel, Lifestyle
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <i class="fas fa-comments"></i>
+                                                    03 Comments
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="item-post">
+                                    <div class="thumb-post">
+                                        <img src="https://preview.colorlib.com/theme/thepetcare/assets/img/blog/xsingle_blog_2.jpg.pagespeed.ic.QwFRAzu_NP.webp"
+                                            alt="">
+                                        <a href="" class="post-date">
+                                            <span class="post-date-day">15</span> <BR>
+                                            <span class="post-date-month">Jan</span>
+                                        </a>
+                                    </div>
+                                    <div class="desc-post">
+                                        <a href="" class="desc-post-title">
+                                            <h2>Google inks pact for new 35-storey office</h2>
+                                        </a>
+                                        <p>That dominion stars lights dominion divide years for fourth have don't stars
+                                            is
+                                            that he earth it first without heaven in place seed it second morning
+                                            saying.
+                                        </p>
+                                        <ul class="post-info-link d-flex">
+                                            <li>
+                                                <a href="">
+                                                    <i class="fas fa-user"></i>
+                                                    Travel, Lifestyle
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <i class="fas fa-comments"></i>
+                                                    03 Comments
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="item-post">
+                                    <div class="thumb-post">
+                                        <img src="https://preview.colorlib.com/theme/thepetcare/assets/img/blog/xsingle_blog_3.jpg.pagespeed.ic.D3so3ZMyuT.webp"
+                                            alt="">
+                                        <a href="" class="post-date">
+                                            <span class="post-date-day">15</span> <BR>
+                                            <span class="post-date-month">Jan</span>
+                                        </a>
+                                    </div>
+                                    <div class="desc-post">
+                                        <a href="" class="desc-post-title">
+                                            <h2>Google inks pact for new 35-storey office</h2>
+                                        </a>
+                                        <p>That dominion stars lights dominion divide years for fourth have don't stars
+                                            is
+                                            that he earth it first without heaven in place seed it second morning
+                                            saying.
+                                        </p>
+                                        <ul class="post-info-link d-flex">
+                                            <li>
+                                                <a href="">
+                                                    <i class="fas fa-user"></i>
+                                                    Travel, Lifestyle
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <i class="fas fa-comments"></i>
+                                                    03 Comments
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="item-post">
+                                    <div class="thumb-post">
+                                        <img src="https://preview.colorlib.com/theme/thepetcare/assets/img/blog/xsingle_blog_4.jpg.pagespeed.ic.sPLUurA5SD.webp"
+                                            alt="">
+                                        <a href="" class="post-date">
+                                            <span class="post-date-day">15</span> <BR>
+                                            <span class="post-date-month">Jan</span>
+                                        </a>
+                                    </div>
+                                    <div class="desc-post">
+                                        <a href="" class="desc-post-title">
+                                            <h2>Google inks pact for new 35-storey office</h2>
+                                        </a>
+                                        <p>That dominion stars lights dominion divide years for fourth have don't stars
+                                            is
+                                            that he earth it first without heaven in place seed it second morning
+                                            saying.
+                                        </p>
+                                        <ul class="post-info-link d-flex">
+                                            <li>
+                                                <a href="">
+                                                    <i class="fas fa-user"></i>
+                                                    Travel, Lifestyle
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <i class="fas fa-comments"></i>
+                                                    03 Comments
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="item-post">
+                                    <div class="thumb-post">
+                                        <img src="https://preview.colorlib.com/theme/thepetcare/assets/img/blog/xsingle_blog_5.jpg.pagespeed.ic.crhqX85fp0.webp"
+                                            alt="">
+                                        <a href="" class="post-date">
+                                            <span class="post-date-day">15</span> <BR>
+                                            <span class="post-date-month">Jan</span>
+                                        </a>
+                                    </div>
+                                    <div class="desc-post">
+                                        <a href="" class="desc-post-title">
+                                            <h2>Google inks pact for new 35-storey office</h2>
+                                        </a>
+                                        <p>That dominion stars lights dominion divide years for fourth have don't stars
+                                            is
+                                            that he earth it first without heaven in place seed it second morning
+                                            saying.
+                                        </p>
+                                        <ul class="post-info-link d-flex">
+                                            <li>
+                                                <a href="">
+                                                    <i class="fas fa-user"></i>
+                                                    Travel, Lifestyle
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <i class="fas fa-comments"></i>
+                                                    03 Comments
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination-bar">
+                                <ul class="d-flex">
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            1
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <form action="">
+                                <div class="search-kw">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control search-kw-input"
+                                                placeholder="Search Keyword">
+                                            <a href="" class="perform">Search</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div class="box-4">
+                                <div class="box-4-header">
+                                    <h4>Category</h4>
+                                </div>
+                                <div class="box-4-body">
+                                    <ul class="list-essential-food">
+                                        <li class="item-essential-food">
+                                            <a href="">Resaurant food(37)</a>
+                                        </li>
+                                        <li class="item-essential-food">
+                                            <a href="">Travel news(10)</a>
+                                        </li>
+                                        <li class="item-essential-food">
+                                            <a href="">Modern technology(03)</a>
+                                        </li>
+                                        <li class="item-essential-food">
+                                            <a href="">Product(11)</a>
+                                        </li>
+                                        <li class="item-essential-food">
+                                            <a href="">Inspiration(21)</a>
+                                        </li>
+                                        <li class="item-essential-food">
+                                            <a href="">Health Care(09)</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <div class="box-4">
+                                <div class="box-4-header">
+                                    <h4>Recent Post</h4>
+                                </div>
+                                <div class="box-4-body">
+                                    <ul class="list-recent-post">
+                                        <li class="item-recent-post">
+                                            <img src="https://preview.colorlib.com/theme/thepetcare/assets/img/post/xpost_1.jpg.pagespeed.ic.b6nLp44f-A.webp"
+                                                alt="">
+                                            <div class="desc-recent-post">
+                                                <h3>
+                                                    <a href="">From life was you fish...</a>
+                                                </h3>
+                                                <p>January 12, 2019</p>
+                                            </div>
+                                        </li>
+                                        <li class="item-recent-post">
+                                            <img src="https://preview.colorlib.com/theme/thepetcare/assets/img/post/xpost_2.jpg.pagespeed.ic.b6nLp44f-A.webp"
+                                                alt="">
+                                            <div class="desc-recent-post">
+                                                <h3>
+                                                    <a href="">
+                                                        The Amazing Hubble
+                                                    </a>
+                                                </h3>
+                                                <p>02 Hours ago</p>
+                                            </div>
+                                        </li>
+                                        <li class="item-recent-post">
+                                            <img src="https://preview.colorlib.com/theme/thepetcare/assets/img/post/xpost_3.jpg.pagespeed.ic.b6nLp44f-A.webp"
+                                                alt="">
+                                            <div class="desc-recent-post">
+                                                <h3>
+                                                    <a href="">
+                                                        Astronomy Or Astrology
+                                                    </a>
+                                                </h3>
+                                                <p>03 Hours ago</p>
+                                            </div>
+                                        </li>
+                                        <li class="item-recent-post">
+                                            <img src="https://preview.colorlib.com/theme/thepetcare/assets/img/post/xpost_4.jpg.pagespeed.ic.b6nLp44f-A.webp"
+                                                alt="">
+                                            <div class="desc-recent-post">
+                                                <h3>
+                                                    <a href="">Asteroids telescope</a>
+                                                </h3>
+                                                <p>01 Hours ago</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <div class="box-4">
+                                <div class="box-4-header">
+                                    <h4>Tag Clouds</h4>
+                                </div>
+                                <div class="box-4-body">
+                                    <ul class="list-tagc">
+                                        <li>
+                                            <a href="#" class="item-tagc">project</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="item-tagc">love</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="item-tagc">technology</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="item-tagc">travel</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="item-tagc">restaurant</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="item-tagc">life style</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="item-tagc">design</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="item-tagc">illustration</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="box-4">
+                                <div class="box-4-header">
+                                    <h4>Instagram Feeds</h4>
+                                </div>
+                                <div class="box-4-body">
+                                    <ul class="list-img-if">
+                                        <li class="item-img-if">
+                                            <a href="">
+                                                <img src="https://preview.colorlib.com/theme/thepetcare/assets/img/post/xpost_5.jpg.pagespeed.ic.6uccBsOBRz.webp"
+                                                    alt="">
+                                            </a>
+                                        </li>
+                                        <li class="item-img-if">
+                                            <a href="">
+                                                <img src="https://preview.colorlib.com/theme/thepetcare/assets/img/post/xpost_6.jpg.pagespeed.ic.BgB7ZoApSh.webp"
+                                                    alt="">
+                                            </a>
+                                        </li>
+                                        <li class="item-img-if">
+                                            <a href="">
+                                                <img src="https://preview.colorlib.com/theme/thepetcare/assets/img/post/xpost_7.jpg.pagespeed.ic.6uccBsOBRz.webp"
+                                                    alt="">
+                                            </a>
+                                        </li>
+                                        <li class="item-img-if">
+                                            <a href="">
+                                                <img src="https://preview.colorlib.com/theme/thepetcare/assets/img/post/xpost_8.jpg.pagespeed.ic.6uccBsOBRz.webp"
+                                                    alt="">
+                                            </a>
+                                        </li>
+                                        <li class="item-img-if">
+                                            <a href="">
+                                                <img src="https://preview.colorlib.com/theme/thepetcare/assets/img/post/xpost_9.jpg.pagespeed.ic.6uccBsOBRz.webp"
+                                                    alt="">
+                                            </a>
+                                        </li>
+                                        <li class="item-img-if">
+                                            <a href="">
+                                                <img src="https://preview.colorlib.com/theme/thepetcare/assets/img/post/xpost_10.jpg.pagespeed.ic.6uccBsOBRz.webp"
+                                                    alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="box-4">
+                                <div class="box-4-header">
+                                    <h4>Newsletter</h4>
+                                </div>
+                                <div class="box-4-body">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control search-kw-input"
+                                            placeholder="Enter email">
+                                    </div>
+                                    <button class="btn-4">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End: wp-content -->
+
+        <div id="footer">
+            <div id="footer-top">
                 <div class="container">
                     <div class="row justify-content-between">
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-8">
-                            <div class="single-footer-caption mb-50">
-                                <div class="single-footer-caption mb-20">
-
-                                    <div class="footer-logo mb-35">
-                                        <a href="index.html"><img
-                                                src="https://preview.colorlib.com/theme/thepetcare/assets/img/logo/xlogo2_footer.png.pagespeed.ic.2Fh043loGz.webp"
-                                                alt=""></a>
-                                    </div>
-                                    <div class="footer-tittle">
-                                        <div class="footer-pera">
-                                            <p>Seddo eiusmod tempor incididunt ut labore et dolore magna aliqua. Conse
-                                                ctetur pisicin elit, sed do eiusmod tempor.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="footer-social">
-                                        <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                        <a href="#"><i class="fab fa-youtube"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="offset-xl-1 col-xl-2 col-lg-2 col-md-4 col-sm-6">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>Navigation</h4>
-                                    <ul>
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">About</a></li>
-                                        <li><a href="#">Services</a></li>
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="#">Contact</a></li>
+                            <div class="box">
+                                <a href="" class="header-box logo-footer">
+                                    <img src="https://preview.colorlib.com/theme/thepetcare/assets/img/logo/xlogo2_footer.png.pagespeed.ic.2Fh043loGz.webp"
+                                        alt="">
+                                </a>
+                                <div class="body-box">
+                                    <p>Seddo eiusmod tempor incididunt ut labore et dolore magna aliqua. Conse ctetur
+                                        pisicin elit, sed do eiusmod tempor.</p>
+                                    <ul class="footer-social d-flex">
+                                        <li>
+                                            <a href=""><i class="fab fa-facebook"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><i class="fab fa-youtube"></i></a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>Services</h4>
-                                    <ul>
-                                        <li><a href="#">Pet Care</a></li>
-                                        <li><a href="#">Pet Treatment</a></li>
-                                        <li><a href="#">Pet Trainingl</a></li>
-                                        <li><a href="#">Hygienic Care</a></li>
-                                    </ul>
+                            <div class="box">
+                                <div class="header-box">
+                                    <h4>Navigation</h4>
                                 </div>
+                                <ul class="body-box">
+                                    <li>
+                                        <a href="">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Contact</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle mb-10">
-                                    <h4>Subscribe newsletter</h4>
-                                    <p>Subscribe our newsletter to get updates about our services and offers.</p>
-                                </div>
 
-                                <div class="footer-form mb-20">
-                                    <div id="mc_embed_signup">
-                                        <form target="_blank"
-                                            action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                                            class="subscribe_form relative mail_part">
-                                            <input type="email" name="email" id="newsletter-form-email"
-                                                placeholder="Enter your email" class="placeholder hide-on-focus">
-                                            <div class="form-icon">
-                                                <button type="submit" name="submit" id="newsletter-submit"
-                                                    class="email_icon newsletter-submit button-contactForm">
-                                                    <i class="fas fa-arrow-right"></i>
-                                                </button>
-                                            </div>
-                                            <div class="mt-10 info"></div>
-                                        </form>
-                                    </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+                            <div class="box">
+                                <div class="header-box">
+                                    <h4>Services</h4>
+                                </div>
+                                <ul class="body-box">
+                                    <li>
+                                        <a href="">Pet Care</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Pet Treatment</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Pet Trainingl</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Hygienic Care</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                            <div class="box">
+                                <div class="header-box">
+                                    <h4>Subscribe newsletter</h4>
+                                </div>
+                                <ul class="body-box">
+                                    <p>Subscribe our newsletter to get updates about our services and offers.</p>
+                                </ul>
+                                <div class="send-email">
+                                    <input type="text" placeholder="Enter your email">
+                                    <i class="fas fa-arrow-right"></i>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="footer-bottom-area">
+            <div id="footer-bottom">
                 <div class="container">
-                    <div class="footer-border">
-                        <div class="row">
-                            <div class="col-xl-12 ">
-                                <div class="footer-copy-right text-center">
-                                    <p>Copyright &copy;
-                                        <script>
-                                            document.write(new Date().getFullYear());
-                                        </script> All rights reserved | This template is made with <i
-                                            class="fa fa-heart color-danger" aria-hidden="true"></i> by <a
-                                            href="https://colorlib.com" target="_blank"
-                                            rel="nofollow noopener">Colorlib</a>
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center mt-40">
+                            <p>Copyright ©2021 All rights reserved | This template is made with <i
+                                    class="fa fa-heart"></i> by <a href="https://colorlib.com/"
+                                    target="_blank">Colorlib</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
-
-    <div id="back-top">
-        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+        <!-- End: footer -->
+        <div id="back-top">
+            <a href="#" title="BACK TOP">
+                <i class="fas fa-level-up-alt"></i>
+            </a>
+        </div>
     </div>
 
-</body>
 
-</html>
+    <!-- Import link js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/app.js"></script>

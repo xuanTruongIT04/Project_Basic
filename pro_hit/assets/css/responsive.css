@@ -426,8 +426,8 @@
 
 }
 
-.movi-moa img {
-    padding-bottom: 50px;
+.movi-moa {
+    margin-bottom: 50px;
 }
 
 .action-button {
@@ -733,7 +733,7 @@
 @media (min-width: 1200px) {
     .hero-caption {
         padding-bottom: 80px;
-        padding-top: 60px;
+        padding-top: 58px;
     }
 
 
@@ -811,6 +811,11 @@
         background-size: cover!important;
         height: 200px;
     }
+
+    .images-2:hover {
+        transform:scale(1.5);
+    }
+
     .images2-1 {
         background: url('https://preview.colorlib.com/theme/thepetcare/assets/img/elements/xg1.jpg.pagespeed.ic.HH5vvLjDNq.webp');
     }

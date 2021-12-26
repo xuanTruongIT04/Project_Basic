@@ -38,6 +38,7 @@ button:focus {
     border-radius: 30px;
 }
 
+
 .btn-1:hover {
     color: #f2f2f2 !important;
 }
@@ -89,15 +90,17 @@ button:focus {
 }
 
 #wrapper .loan-btn {
-    box-shadow: inset  0 0 0 0 #ad2e59;
+    box-shadow: inset 0 0 0 0 #ad2e59;
     transition: ease-in-out 0.2s;
-    outline: none; 
+    outline: none;
     z-index: 1;
     border: 0;
     font-weight: normal;
+    padding: 21px 44px;
 }
+
 #wrapper .loan-btn:hover {
-    box-shadow:inset 0 60px 0 0 #ad2e59;
+    box-shadow: inset 0 66px 0 0 #ad2e5881;
 }
 
 /* =============== CSS CHUNG ================= */
@@ -546,7 +549,7 @@ p {
 }
 
 .typography h1, .typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {
-    color: #828bb2!important;
+    color: #828bb2 !important;
 }
 
 
@@ -1021,7 +1024,7 @@ p {
     position: relative;
 }
 
-.single-slide > .row {
+.single-slide>.row {
     margin-right: 0;
     margin-left: 0;
 }
@@ -1084,12 +1087,13 @@ p {
 
 }
 
-.sub-main-menu>li  {
+.sub-main-menu>li {
     margin-left: 7px;
     display: block;
 }
+
 .sub-main-menu>li>a {
-    padding: 6px 10px!important;
+    padding: 6px 10px !important;
     font-size: 16px;
     color: #1d2547;
     font-weight: 700;
@@ -1098,7 +1102,7 @@ p {
 
 
 .sub-main-menu li:hover a {
-    color: #ff3e7e!important;
+    color: #ff3e7e !important;
 }
 
 #main-menu li .sub-main-menu {
@@ -1204,23 +1208,27 @@ p {
     height: auto;
 }
 
-.services-caption {
+#wrapper .services-caption {
     transition: all .4s ease-out 0s;
     position: absolute;
     bottom: -65px;
     background: #fff;
     width: 80%;
-    padding-top: 24px;
+    padding-top: 34px;
     padding-bottom: 25px;
     padding-left: 29px;
-    padding-right: 15px;
+    padding-right: 15px;;
     left: 0;
     right: 0;
     margin: 0 auto;
     overflow: hidden;
     box-shadow: 0 10px 20px rgb(2 60 90 / 10%);
     border-radius: 10px;
-    width: 90%;
+    width: 80%;
+}
+
+#wrapper .card-deck .card {
+    margin-bottom: 100px;
 }
 
 #list-services .services-caption h3 a {
@@ -1385,6 +1393,7 @@ button:focus, input:focus, input:focus, textarea, textarea:focus {
     padding-top: 120px;
     padding-bottom: 120px;
     background-image: url('https://preview.colorlib.com/theme/thepetcare/assets/img/gallery/section_bg01.png');
+    background-size: cover;
 }
 
 .meaning-of-animals .row {
@@ -1536,14 +1545,14 @@ button:focus, input:focus, input:focus, textarea, textarea:focus {
     display: block;
     background-color: #ccc;
     border-radius: 50%;
-    font-size: 30px!important;
+    font-size: 30px !important;
     font-weight: 600;
     color: #fff;
 }
 
-button.owl-next:focus , button.owl-prev:focus  {
-    outline: none!important;
-    border: none!important;
+button.owl-next:focus, button.owl-prev:focus {
+    outline: none !important;
+    border: none !important;
 }
 
 .owl-prev {
@@ -1644,7 +1653,7 @@ span.padding {
     border-left: 2px solid #140c40;
     margin: 0 0 1rem;
     line-height: 24px;
-    font-family: "DM Sans",sans-serif;
+    font-family: "DM Sans", sans-serif;
 }
 
 .image-gallery .box-2 img {
@@ -1652,8 +1661,8 @@ span.padding {
     height: auto;
 }
 
-.default-select select{
-    border: none!important;
+.default-select select {
+    border: none !important;
     border-radius: 0;
     height: 40px;
     background: #f9f9ff;
@@ -1661,9 +1670,10 @@ span.padding {
     padding-right: 40px;
 }
 
-.default-select:focus-visible select{
-    border: none!important;
+.default-select:focus-visible select {
+    border: none !important;
 }
+
 .confirm-radio input:checked+label {
     border-radius: 50%;
 }
@@ -1696,4 +1706,21 @@ span.padding {
     display: block;
     line-height: 50px;
     font-weight: 900;
+}
+
+/*================================================SERVICE=================================================================*/
+
+.map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
