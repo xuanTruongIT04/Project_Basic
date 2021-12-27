@@ -1925,6 +1925,11 @@ span.padding {
     width: 90%!important;
     height: 85%!important;
 }
+ 
+#wrapper .image-gallery .col-md-4, #wrapper .image-gallery .col-md-6 {
+    max-width: 100%;
+    height: auto;
+}
 
 #back-top {
     background: #ff3e7e;
