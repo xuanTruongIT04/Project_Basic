@@ -136,7 +136,7 @@ button:focus {
     position: fixed!important;
     background-color: #fff;
     z-index: 999999;
-    box-shadow: 8px 0 8px 12px rgba(0, 0, 0, 0.178);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.178);
     animation-name: fixed_animation;
     animation-duration: 0.8s;
 }
@@ -1866,19 +1866,113 @@ span.padding {
     display: block;
 }
 
-.content-bq {
-    padding: 30px 50px 30px 30px;
-    background: #f9f9ff;
-    border-left: 2px solid #140c40;
-    margin: 0 0 1rem;
-    line-height: 24px;
-    font-family: "DM Sans", sans-serif;
+.list-thumb-highlight a img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
 }
 
-.image-gallery .box-2 img {
-    max-width: 100%;
-    height: auto;
+.list-thumb-highlight a{
+    margin-top: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
 }
+
+html {
+    position: relative;
+}
+
+.bg-show {
+    background-color: rgba(0, 0, 0, 0.932);
+    height: 100vh;
+    position: absolute;
+    top: 4000px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 999999;
+}
+
+.img-show {
+    position: relative;
+}
+
+.img-show img {
+    width: 90vw;
+    height: 70vh;
+    margin-top: 8%;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.next, .prev {
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
+}
+
+.next:hover, .prev:hover {
+    opacity: 1;
+}
+
+.next {
+    right: 20px;
+    top: 45%;
+}
+
+.prev {
+    left: 26px;
+    top: 48%;
+}
+
+.prev i, .next i {
+    font-size: 30px;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 50%;
+}
+.active {
+    border: 2px solid #fff!important;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.next-active {
+    border: 2px solid #fff!important;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.close {
+    position: absolute;
+    top: 5%;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    right: 0;
+    color: #fff;
+    opacity: 0.8;
+    transition: all 0.2s ease-in-out;
+}
+
+.close i{
+    color: #fff;
+    font-weight: 600;
+    font-size: 34px;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
 
 #wrapper .image-gallery .content {
     width: 1200px;
@@ -1919,12 +2013,6 @@ span.padding {
     border-radius: 50%;
 }
 
-.fancybox-content {
-    transform: translate(6%, 15%) scale(1, 1)!important;
-    opacity: 1;
-    width: 90%!important;
-    height: 85%!important;
-}
  
 #wrapper .image-gallery .col-md-4, #wrapper .image-gallery .col-md-6 {
     max-width: 100%;
