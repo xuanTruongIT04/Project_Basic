@@ -1,0 +1,542 @@
+* {
+    box-sizing: border-box;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.btn {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #F47B2A;
+    display: inline-block;
+    padding: 6px 24px;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: #b45313;
+}
+
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#header .container, .l-mm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.main-menu {
+    display: flex;
+    margin-left: 30px;
+}
+
+.main-menu li a {
+    color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    padding: 8px 15px;
+    transition: all 0.3s ease-in;
+    align-items: center;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+.log-in-regis {}
+
+.log-in-regis a {
+    color: #F47B2A;
+    border: 1px solid rgba(244, 123, 42, 0.5);
+    display: inline-block;
+    padding: 5px 32px;
+    font-weight: 600;
+}
+
+.log-in-regis a:first-child {}
+
+.banner {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background: url('https://demo-hitod.vercel.app/assets/images/intro.jpg') center center/cover no-repeat;
+    margin-bottom: 80px;
+}
+
+.content-banner {
+    text-align: center;
+    background-color: #fff;
+    top: 0;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    padding-top: 120px;
+    padding-bottom: 120px;
+    opacity: 0.8;
+}
+
+.text-banner {
+    z-index: 12;
+    margin: 0 auto;
+}
+
+.date-clb {
+    margin-bottom: 16px;
+}
+
+.name-clb {
+    font-size: 44px;
+    font-weight: 600;
+    color: #F47B2A;
+}
+
+.sub-name {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 14px 50px;
+}
+
+.time-cf {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.time-cf-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.time-cf-item span:first-child {
+    font-size: 28px;
+}
+
+.time-cf-item span:last-child {
+    font-size: 14px;
+}
+
+.kpn {}
+
+.event-highlight {}
+
+.box {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.header-box h3 {
+    font-size: 44px;
+    font-weight: 450;
+}
+
+.header-box {
+    text-align: center;
+}
+
+.event-highlight .body-box {
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.103);
+    border-radius: 20px;
+}
+
+.event-highlight .body-box img {
+    flex-basis: 50%;
+    max-width: 50%;
+    border-radius: 20px;
+}
+
+.event-highlight-content {
+    flex-basis: 50%;
+    padding: 16px 64px;
+    
+}
+
+.event-highlight-content h3 {
+    font-size: 44px;
+    font-weight: 500;
+    color: #F47B2A;
+}
+
+.event-highlight-content p {
+    width: 400px;
+    margin-top: 14px;
+    margin-bottom: 32px;
+    font-size: 14px;
+    
+}
+
+.board-director-clb {
+    background-color: rgba(128, 128, 128, 0.103);
+}
+
+.board-director-clb .header-box {
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+.board-director-clb .body-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.board-member {
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.board-member img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+}
+
+.hope {
+    padding-bottom: 64px;
+}
+
+.board-member {
+    background-color: #fff;
+    padding: 24px 32px 16px;
+    border: 1px solid rgba(204, 204, 204, 0.199);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 4px rgba(61, 61, 61, 0.233);
+}
+
+.face-bm {}
+
+.name-bm {}
+
+.position-bm {}
+
+.annual-event {}
+
+.nav-ae {
+    display: flex;
+    width: 380px;
+    margin: 0 auto;
+}
+
+.name-ae {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.name-ae li {
+    flex-basis: 45%;
+    display: flex;
+    align-items: center;
+}
+
+.desc-name-ae {
+    padding: 20px;
+
+}
+
+.time-locate-ae {}
+
+.locate-ae {}
+
+.time-ae {}
+
+.research-ae {
+    background: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url('https://demo-hitod.vercel.app/assets/images/event-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.research-ae .box {
+    text-align: center;
+}
+
+.research-ae .box-header p {
+    margin: 32px 389px;
+}
+
+.box-body {}
+
+.action {}
+
+.our-classes {
+    text-align: center;
+}
+
+.list-courses {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-courses li {
+    border: 1px solid #ccc;
+    flex-basis: 23%;
+    margin-right: 10px;
+}
+
+.title-crs {}
+
+.desc-crs {}
+
+.classroom-experience {}
+
+.member-ce {}
+
+.comment-member-ce {}
+
+.rate-star {}
+
+.fas {}
+
+.fa-star {}
+
+.name-member-ce {}
+
+/* slider */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#slider {
+    max-width: 870px;
+    margin: 100px auto;
+    position: relative;
+}
+
+.fa-chevron-circle-left {
+    position: absolute;
+    z-index: 1;
+    font-size: 80px;
+    color: rgba(204, 204, 204, 0.507);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.fa-chevron-circle-right {
+    position: absolute;
+    z-index: 1;
+    font-size: 80px;
+    color: rgba(204, 204, 204, 0.507);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 100%;
+    cursor: pointer;
+}
+
+.dots-list {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 330px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dots-item {
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color .25s linear;
+}
+
+.dots-list li.active {
+    background-color: #fff;
+}
+
+.slider-main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    transition: transform .25s linear;
+}
+
+.slider-item {
+    width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+    position: relative;
+    user-select: none;
+}
+
+.slider-wrapper {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-item img {
+    /* border-radius: 10px;
+    object-fit: contain;
+    height: 300px;
+    width: 100%; */
+}
+
+.feed-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+}
+
+.user p {
+    color: rgba(73, 60, 60, 0.685);
+}
+
+.stars {
+    display: flex;
+    gap: 0 13px;
+    margin-bottom: 8px;
+    color: orange;
+}
+
+.name h3 {
+    font-weight: 600;
+}
+
+.avt {
+    width: 100px;
+    height: 100px;
+    border: 5px solid rgb(68, 63, 63);
+    border-radius: 50%;
+}
+
+.box-2 {
+    /* top: 10px; */
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    transform: rotate(10deg);
+    background-color: rgba(204, 204, 204, 0.123);
+    left: 40%;
+}
+
+.new-post {}
+
+.list-np {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.list-np li {
+    flex-basis: 23%;
+    margin-right: 20px;
+}
+
+.thumb-np {}
+
+.desc-np {}
+
+.time-trick-np {
+    display: flex;
+}
+
+.time-np {}
+
+.trick-np {}
+
+.desc-trick-np {}
+
+.reviews-np {
+    display: flex;
+}
+
+.number-views-np {}
+
+.fa-eye {}
+
+.number-comment-np {}
+
+.fa-comment-alt {}
+
+.contact-us {
+    text-align: center;
+}
+
+.input-ye {
+    position: relative;
+    width: 770px;
+    margin: 0 auto;
+}
+
+.input-ye input {
+    width: 770px;
+    height: 49px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.input-ye a {
+    position: absolute;
+    right: 0;
+    top: 14px;
+}
+
+#footer .container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.box-1 {}
+
+.heaeder-box-1 {}
+
+.body-box-1 {}
+
+.body-box-1 p {
+    width: 210px;
+}
+
+.body-box-1 button {
+    width: 100%;
+    outline: none;
+}
+
+.footer-social {
+    display: flex;
+}
+
+.list-bx1 {}
